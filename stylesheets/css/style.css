@@ -3788,7 +3788,6 @@ ul {
 
 /* line 1, ../scss/modules/_directions.scss */
 .directions {
-  transition-duration: 0.65s;
   padding-top: 40px;
   position: relative;
   z-index: 1;
@@ -3821,7 +3820,6 @@ ul {
 
 /* line 1, ../scss/modules/_ingredients.scss */
 .ingredients {
-  transition-duration: 0.8s;
   height: 100%;
   padding-top: 40px;
   font-size: 16px;
@@ -3906,7 +3904,6 @@ ul {
   color: #477A74;
   background: url("../../images/toggle.png") no-repeat center center;
   background-size: 24px auto;
-  transition-duration: 0.65s;
 }
 /* line 14, ../scss/modules/_toggle.scss */
 .toggle__border-left, .toggle__border-right {
@@ -3933,14 +3930,15 @@ ul {
 }
 /* line 31, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
-  left: calc(100% - 70px);
+  left: initial;
+  right: 20px;
 }
-/* line 33, ../scss/modules/_toggle.scss */
+/* line 34, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 36, ../scss/modules/_toggle.scss */
+/* line 37, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-right {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
