@@ -1,0 +1,41 @@
+.u-clearfix {
+	@include clearfix;
+}
+.u-screen-reader {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.u-responsive {
+	width: 100%;
+	height: auto;
+}
+
+.u-text-left {
+	text-align: left;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
+.u-desktoponly {
+	@media (max-width: $breakpoint-mid) {
+		display: none;
+	}
+}
+
+.u-mobileonly {
+	display: none;
+	@media (max-width: $breakpoint-mid) {
+		display: inline-block;
+	}
+}

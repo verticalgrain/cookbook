@@ -1,0 +1,55 @@
+
+body {
+	font-family: $font-base;
+	color: $color-base;
+	font-size: 18px;
+	line-height: 120%;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	&:last-of-type {
+		margin-bottom: 0; // This is because of normalize. If you Meyer you have it anyway.
+	}
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	line-height: 100%;
+}
+
+h1 {
+	margin-bottom: $space;
+	font-weight: 100;
+}
+
+h2 {
+	margin-bottom: $space;
+	font-family: arial;
+	font-size: 18px;
+}
+strong {
+	font-weight: bold;
+}
+
+html.touch {
+	// stuff
+}
+
+html.no-touch {
+	// stuff
+}
+
+form {
+	input {
+		@include border-radius(0);
+		-webkit-appearance: none;
+	}
+}

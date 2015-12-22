@@ -1,0 +1,22 @@
+.directions {
+	transition-duration: $transdur;
+	padding-top: 40px;
+	position: relative;
+	z-index: 1;
+	&__inner {
+		max-width: 400px;
+		line-height: 180%;
+		margin-bottom: $space*4;
+		@media (max-width: $breakpoint-mid) {
+			max-width: initial;
+			padding-left: 50px;
+		}
+	}
+	span {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	.ingredients-active & {
+		@include translateX(calc(100% - 50px));
+	}
+}

@@ -1,0 +1,48 @@
+.toggle {
+	width: 50px;
+	height: 100vh;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: $color-green;
+	background: url('../../images/toggle.png') no-repeat center center;
+	background-size: 24px auto;
+	transition-duration: $transdur;
+	&__border-left, &__border-right {
+		width: 1px;
+		height: calc(100vh - 40px);
+		display: block;
+		background: #8ABAB6;
+		position: absolute;
+		top: 20px;
+		@include opacity(0);
+	}
+	&__border-left {
+		left: 0;
+		@include opacity(0);
+	}
+	&__border-right {
+		right: 0;
+		@include opacity(1);
+	}
+	.ingredients-active & {
+		left: calc(100% - 70px);
+		.toggle__border-left {
+			@include opacity(1);
+		}
+		.toggle__border-right {
+			@include opacity(0);
+		}
+	}
+	// &__text {
+	// 	position: absolute;
+	// 	left: 0;
+	// 	height: 50px;
+	// 	width: 300px;
+	// 	display: block;
+	// 	@include rotate(90deg);
+	// }
+}
