@@ -10,7 +10,7 @@
 	color: $color-green;
 	background: url('../../images/toggle.png') no-repeat center center;
 	background-size: 24px auto;
-	transition-duration: $transdur;
+	// transition-duration: $transdur;
 	&__border-left, &__border-right {
 		width: 1px;
 		height: calc(100vh - 40px);
@@ -29,7 +29,8 @@
 		@include opacity(1);
 	}
 	.ingredients-active & {
-		left: calc(100% - 70px);
+		left: initial;
+		right: 20px;
 		.toggle__border-left {
 			@include opacity(1);
 		}
