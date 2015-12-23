@@ -3830,10 +3830,10 @@ ul {
 }
 /* line 19, ../scss/modules/_directions.scss */
 .ingredients-active .directions {
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  -moz-transform: translateX(86%);
+  -ms-transform: translateX(86%);
+  -webkit-transform: translateX(86%);
+  transform: translateX(86%);
 }
 
 /* line 1, ../scss/modules/_ingredients.scss */
