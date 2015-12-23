@@ -1,6 +1,6 @@
 .toggle {
 	width: 50px;
-	height: 100vh;
+	@include full-height;
 	position: fixed;
 	z-index: 3;
 	left: 0;
