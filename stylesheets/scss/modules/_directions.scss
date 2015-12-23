@@ -17,6 +17,6 @@
 		text-decoration: underline;
 	}
 	.ingredients-active & {
-		@include translateX(calc(100% - 50px));
+		@include translateX(100%);
 	}
 }
