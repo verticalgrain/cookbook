@@ -3902,7 +3902,7 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #477A74;
-  background: url("../../images/toggle.png") no-repeat center center;
+  background: red url("../../images/toggle.png") no-repeat center center;
   background-size: 24px auto;
 }
 /* line 14, ../scss/modules/_toggle.scss */
