@@ -3963,13 +3963,38 @@ ul {
 /* line 14, ../scss/modules/_toggle.scss */
 .toggle__border-left, .toggle__border-right {
   width: 1px;
-  height: calc(100vh - 40px);
+  height: 372px;
+  height: 100vh;
   display: block;
-  background: #8ABAB6;
   position: absolute;
-  top: 20px;
+  top: 0px;
+  padding: 20px 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  /* line 14, ../scss/modules/_toggle.scss */
+  .toggle__border-left, .toggle__border-right {
+    height: 1024px;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  /* line 14, ../scss/modules/_toggle.scss */
+  .toggle__border-left, .toggle__border-right {
+    height: 768px;
+  }
+}
+@media all and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 14, ../scss/modules/_toggle.scss */
+  .toggle__border-left, .toggle__border-right {
+    height: 372px;
+  }
+}
+@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* line 14, ../scss/modules/_toggle.scss */
+  .toggle__border-left, .toggle__border-right {
+    height: 372px;
+  }
 }
 /* line 23, ../scss/modules/_toggle.scss */
 .toggle__border-left {
@@ -3984,16 +4009,23 @@ ul {
   opacity: 1;
 }
 /* line 31, ../scss/modules/_toggle.scss */
+.toggle__inner {
+  background: #8ABAB6;
+  display: block;
+  width: 1px;
+  height: 100%;
+}
+/* line 37, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
   left: initial;
   right: 0px;
 }
-/* line 34, ../scss/modules/_toggle.scss */
+/* line 40, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 37, ../scss/modules/_toggle.scss */
+/* line 43, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-right {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
