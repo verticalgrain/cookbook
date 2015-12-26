@@ -1,6 +1,6 @@
 .directions {
 	// transition-duration: $transdur;
-	padding-top: 40px;
+	padding-top: 18px;
 	position: relative;
 	z-index: 1;
 	&__inner {
@@ -17,6 +17,6 @@
 		text-decoration: underline;
 	}
 	.ingredients-active & {
-		@include translateX(86%);
+		@include translateX(100%);
 	}
 }
