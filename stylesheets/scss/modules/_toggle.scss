@@ -30,7 +30,7 @@
 	}
 	.ingredients-active & {
 		left: initial;
-		right: 20px;
+		right: 0px;
 		.toggle__border-left {
 			@include opacity(1);
 		}

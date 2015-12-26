@@ -3151,50 +3151,52 @@ th {
 body {
   font-family: "IM Fell Double Pica", serif, Times, serif;
   color: #3A312D;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 120%;
+  letter-spacing: 0.04em;
 }
 
-/* line 9, ../scss/includes/_typography.scss */
+/* line 10, ../scss/includes/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 14, ../scss/includes/_typography.scss */
+/* line 15, ../scss/includes/_typography.scss */
 p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 19, ../scss/includes/_typography.scss */
+/* line 20, ../scss/includes/_typography.scss */
 p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-/* line 23, ../scss/includes/_typography.scss */
+/* line 24, ../scss/includes/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 100%;
 }
 
-/* line 28, ../scss/includes/_typography.scss */
+/* line 29, ../scss/includes/_typography.scss */
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-weight: 100;
+  font-size: 28px;
 }
 
-/* line 33, ../scss/includes/_typography.scss */
+/* line 35, ../scss/includes/_typography.scss */
 h2 {
   margin-bottom: 15px;
-  font-family: arial;
   font-size: 18px;
+  font-style: italic;
 }
 
-/* line 38, ../scss/includes/_typography.scss */
+/* line 41, ../scss/includes/_typography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 51, ../scss/includes/_typography.scss */
+/* line 54, ../scss/includes/_typography.scss */
 form input {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -3804,9 +3806,19 @@ ul {
   font-size: 100px;
 }
 
+/* line 5, ../scss/modules/_general.scss */
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  padding: 0 0 4px 0;
+  margin: 0 0 6px 0;
+  border-bottom: 1px solid rgba(71, 122, 116, 0.25);
+}
+
 /* line 1, ../scss/modules/_directions.scss */
 .directions {
-  padding-top: 40px;
+  padding-top: 18px;
   position: relative;
   z-index: 1;
 }
@@ -3830,10 +3842,10 @@ ul {
 }
 /* line 19, ../scss/modules/_directions.scss */
 .ingredients-active .directions {
-  -moz-transform: translateX(86%);
-  -ms-transform: translateX(86%);
-  -webkit-transform: translateX(86%);
-  transform: translateX(86%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 /* line 1, ../scss/modules/_ingredients.scss */
@@ -3974,7 +3986,7 @@ ul {
 /* line 31, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
   left: initial;
-  right: 20px;
+  right: 0px;
 }
 /* line 34, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-left {
