@@ -1,6 +1,8 @@
 .ingredients {
-	// transition-duration: 0.8s;
+	transition-duration: $transdur-medium;
 	height: 100%;
+	width: 100%;
+	max-width: 326px; // arbitrary based on iphone 4 - tweak as necessary
 	padding-top: 40px;
 	font-size: 16px;
 	line-height: 140%;

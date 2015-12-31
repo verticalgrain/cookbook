@@ -1,0 +1,30 @@
+.ingredient {
+	@include clearfix;
+	position: relative;
+	width: 100%;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 2px;
+		display: block;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 15px;
+		border-bottom: 2px dotted rgba(black,0.15);
+	}
+	&__name, &__quantity {
+		background: $color-canvas;
+		position: relative;
+		z-index: 2;
+	}
+	&__name {
+		float: left;
+		padding-right: 5px;
+	}
+	&__quantity {
+		float: right;
+		padding: 0 20px 0 5px;
+		color: #5b504b;
+	}
+}
