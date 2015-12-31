@@ -33,7 +33,8 @@ $height-full-fallback: 440px;
 // Space
 $space: 15px;
 
-$transdur: 0.65s;
+$transdur: 0.25s;
+$transdur-medium: 0.35s;
 //Grid/Susy Guttes
 // COMMENTED OUT BECAUSE THESE ARE NOW SET IN LAYOUT.SCSS
 // $gutter-body: 40px;

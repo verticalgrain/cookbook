@@ -3299,31 +3299,13 @@ form input {
 }
 /* line 28, ../scss/includes/_layout.scss */
 .l-container-wrapper--absolute {
-  height: 440px;
   height: 100vh;
+  /* iPhone 4 styles - due to bug with vh in iOS 6&7 */
   position: absolute;
   left: 0;
   top: 0;
 }
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 28, ../scss/includes/_layout.scss */
-  .l-container-wrapper--absolute {
-    height: 1024px;
-  }
-}
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 28, ../scss/includes/_layout.scss */
-  .l-container-wrapper--absolute {
-    height: 768px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 28, ../scss/includes/_layout.scss */
-  .l-container-wrapper--absolute {
-    height: 440px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   /* line 28, ../scss/includes/_layout.scss */
   .l-container-wrapper--absolute {
     height: 440px;
@@ -3811,13 +3793,12 @@ ul {
   display: block;
   width: 100%;
   height: 1px;
-  padding: 0 0 4px 0;
-  margin: 0 0 6px 0;
-  border-bottom: 1px solid rgba(71, 122, 116, 0.25);
+  margin-bottom: 20px;
 }
 
 /* line 1, ../scss/modules/_directions.scss */
 .directions {
+  transition-duration: 0.25s;
   padding-top: 18px;
   position: relative;
   z-index: 1;
@@ -3850,7 +3831,10 @@ ul {
 
 /* line 1, ../scss/modules/_ingredients.scss */
 .ingredients {
+  transition-duration: 0.35s;
   height: 100%;
+  width: 100%;
+  max-width: 326px;
   padding-top: 40px;
   font-size: 16px;
   line-height: 140%;
@@ -3864,22 +3848,66 @@ ul {
     left: -100%;
     float: none;
   }
-  /* line 13, ../scss/modules/_ingredients.scss */
+  /* line 15, ../scss/modules/_ingredients.scss */
   .ingredients-active .ingredients {
     left: 0%;
   }
 }
-/* line 17, ../scss/modules/_ingredients.scss */
+/* line 19, ../scss/modules/_ingredients.scss */
 .ingredients__inner {
   padding-left: 30px;
   margin-bottom: 60px;
 }
 @media (max-width: 820px) {
-  /* line 17, ../scss/modules/_ingredients.scss */
+  /* line 19, ../scss/modules/_ingredients.scss */
   .ingredients__inner {
     padding-left: 25px;
     line-height: 160%;
   }
+}
+
+/* line 1, ../scss/modules/_ingredient.scss */
+.ingredient {
+  zoom: 1;
+  position: relative;
+  width: 100%;
+}
+/* line 24, ../scss/includes/_mixins.scss */
+.ingredient:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 5, ../scss/modules/_ingredient.scss */
+.ingredient:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 15px;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+}
+/* line 16, ../scss/modules/_ingredient.scss */
+.ingredient__name, .ingredient__quantity {
+  background: #a0d3cf;
+  position: relative;
+  z-index: 2;
+}
+/* line 21, ../scss/modules/_ingredient.scss */
+.ingredient__name {
+  float: left;
+  padding-right: 5px;
+}
+/* line 25, ../scss/modules/_ingredient.scss */
+.ingredient__quantity {
+  float: right;
+  padding: 0 20px 0 5px;
+  color: #5b504b;
 }
 
 /* line 1, ../scss/modules/_hero.scss */
@@ -3924,8 +3952,8 @@ ul {
 /* line 1, ../scss/modules/_toggle.scss */
 .toggle {
   width: 50px;
-  height: 440px;
   height: 100vh;
+  /* iPhone 4 styles - due to bug with vh in iOS 6&7 */
   position: fixed;
   z-index: 3;
   left: 0;
@@ -3935,26 +3963,9 @@ ul {
   color: #477A74;
   background: url("../../images/toggle.png") no-repeat center center;
   background-size: 24px auto;
+  transition-duration: 0.25s;
 }
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 1, ../scss/modules/_toggle.scss */
-  .toggle {
-    height: 1024px;
-  }
-}
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 1, ../scss/modules/_toggle.scss */
-  .toggle {
-    height: 768px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 1, ../scss/modules/_toggle.scss */
-  .toggle {
-    height: 440px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   /* line 1, ../scss/modules/_toggle.scss */
   .toggle {
     height: 440px;
@@ -3963,8 +3974,8 @@ ul {
 /* line 14, ../scss/modules/_toggle.scss */
 .toggle__border-left, .toggle__border-right {
   width: 1px;
-  height: 440px;
   height: 100vh;
+  /* iPhone 4 styles - due to bug with vh in iOS 6&7 */
   display: block;
   position: absolute;
   top: 0px;
@@ -3972,25 +3983,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 14, ../scss/modules/_toggle.scss */
-  .toggle__border-left, .toggle__border-right {
-    height: 1024px;
-  }
-}
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 14, ../scss/modules/_toggle.scss */
-  .toggle__border-left, .toggle__border-right {
-    height: 768px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 14, ../scss/modules/_toggle.scss */
-  .toggle__border-left, .toggle__border-right {
-    height: 440px;
-  }
-}
-@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   /* line 14, ../scss/modules/_toggle.scss */
   .toggle__border-left, .toggle__border-right {
     height: 440px;

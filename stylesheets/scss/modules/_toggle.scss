@@ -10,7 +10,7 @@
 	color: $color-green;
 	background: url('../../images/toggle.png') no-repeat center center;
 	background-size: 24px auto;
-	// transition-duration: $transdur;
+	transition-duration: $transdur;
 	&__border-left, &__border-right {
 		width: 1px;
 		@include full-height;
