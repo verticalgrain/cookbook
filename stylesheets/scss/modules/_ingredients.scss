@@ -2,7 +2,6 @@
 	transition-duration: $transdur-medium;
 	height: 100%;
 	width: 100%;
-	max-width: 326px; // arbitrary based on iphone 4 - tweak as necessary
 	padding-top: 40px;
 	font-size: 16px;
 	line-height: 140%;
@@ -17,11 +16,8 @@
 		}
 	}
 	&__inner {
-		padding-left: $space*2;
-		margin-bottom: $space*4;
-		@media (max-width: $breakpoint-mid) {
-			padding-left: 25px;
-			line-height: 160%;
-		}
+		padding-left: 25px;
+		margin: 0 $togglewidth $space*4 0;
+		line-height: 160%;
 	}
 }

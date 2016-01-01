@@ -1,5 +1,5 @@
 .toggle {
-	width: 50px;
+	width: $togglewidth;
 	@include full-height;
 	position: fixed;
 	z-index: 3;
@@ -35,8 +35,10 @@
 		height: 100%;
 	}
 	.ingredients-active & {
-		left: initial;
-		right: 0px;
+		left: calc(100% - 50px);
+		@media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+			left: 270px;
+		}
 		.toggle__border-left {
 			@include opacity(1);
 		}
