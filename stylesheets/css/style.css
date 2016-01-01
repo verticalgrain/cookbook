@@ -3783,6 +3783,13 @@ ul {
   }
 }
 
+/* line 21, ../scss/includes/_base.scss */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* line 1, ../scss/modules/_general.scss */
 .general {
   font-size: 100px;
@@ -3805,23 +3812,30 @@ ul {
 }
 /* line 6, ../scss/modules/_directions.scss */
 .directions__inner {
-  max-width: 400px;
   line-height: 180%;
   margin-bottom: 60px;
+  padding-left: 50px;
 }
-@media (max-width: 820px) {
-  /* line 6, ../scss/modules/_directions.scss */
-  .directions__inner {
-    max-width: initial;
-    padding-left: 50px;
-  }
-}
-/* line 15, ../scss/modules/_directions.scss */
+/* line 11, ../scss/modules/_directions.scss */
 .directions span {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 19, ../scss/modules/_directions.scss */
+/* line 15, ../scss/modules/_directions.scss */
+.directions__images {
+  line-height: 0;
+  padding-left: 30px;
+}
+/* line 18, ../scss/modules/_directions.scss */
+.directions__images h2 {
+  padding-left: 20px;
+}
+/* line 22, ../scss/modules/_directions.scss */
+.directions__image {
+  width: calc(100% + 20px);
+  max-width: initial;
+}
+/* line 26, ../scss/modules/_directions.scss */
 .ingredients-active .directions {
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -3831,10 +3845,9 @@ ul {
 
 /* line 1, ../scss/modules/_ingredients.scss */
 .ingredients {
-  transition-duration: 0.35s;
+  transition-duration: 0.25s;
   height: 100%;
   width: 100%;
-  max-width: 326px;
   padding-top: 40px;
   font-size: 16px;
   line-height: 140%;
@@ -3848,22 +3861,16 @@ ul {
     left: -100%;
     float: none;
   }
-  /* line 15, ../scss/modules/_ingredients.scss */
+  /* line 14, ../scss/modules/_ingredients.scss */
   .ingredients-active .ingredients {
     left: 0%;
   }
 }
-/* line 19, ../scss/modules/_ingredients.scss */
+/* line 18, ../scss/modules/_ingredients.scss */
 .ingredients__inner {
-  padding-left: 30px;
-  margin-bottom: 60px;
-}
-@media (max-width: 820px) {
-  /* line 19, ../scss/modules/_ingredients.scss */
-  .ingredients__inner {
-    padding-left: 25px;
-    line-height: 160%;
-  }
+  padding-left: 25px;
+  margin: 0 50px 60px 0;
+  line-height: 160%;
 }
 
 /* line 1, ../scss/modules/_ingredient.scss */
@@ -4010,15 +4017,20 @@ ul {
 }
 /* line 37, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
-  left: initial;
-  right: 0px;
+  left: calc(100% - 50px);
 }
-/* line 40, ../scss/modules/_toggle.scss */
+@media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 37, ../scss/modules/_toggle.scss */
+  .ingredients-active .toggle {
+    left: 270px;
+  }
+}
+/* line 42, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 43, ../scss/modules/_toggle.scss */
+/* line 45, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle .toggle__border-right {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
