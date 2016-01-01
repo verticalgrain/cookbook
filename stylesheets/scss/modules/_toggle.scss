@@ -5,46 +5,50 @@
 	z-index: 3;
 	left: 0;
 	top: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	// padding-top: 20px;
+	// padding-bottom: 20px;
 	color: $color-green;
-	background: url('../../images/toggle.png') no-repeat center center;
+	background: url('../../images/toggle.png') no-repeat center 20px;
 	background-size: 24px auto;
 	transition-duration: $transdur;
-	&__border-left, &__border-right {
-		width: 1px;
-		@include full-height;
-		display: block;
-		position: absolute;
-		top: 0px;
-		padding: 20px 0;
-		@include opacity(0);
-	}
-	&__border-left {
-		left: 0;
-		@include opacity(0);
-	}
-	&__border-right {
-		right: 0;
-		@include opacity(1);
-	}
-	&__inner {
-		background: #8ABAB6;
-		display: block;
-		width: 1px;
-		height: 100%;
-	}
+	border-right: 1px solid $color-green-light;
+	// &__border-left, &__border-right {
+	// 	width: 1px;
+	// 	@include full-height;
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 0px;
+	// 	padding: 20px 0;
+	// 	@include opacity(0);
+	// 	display: none;
+	// }
+	// &__border-left {
+	// 	left: 0;
+	// 	@include opacity(0);
+	// }
+	// &__border-right {
+	// 	right: 0;
+	// 	@include opacity(1);
+	// }
+	// &__inner {
+	// 	background: #8ABAB6;
+	// 	display: block;
+	// 	width: 1px;
+	// 	height: 100%;
+	// }
 	.ingredients-active & {
 		left: calc(100% - 50px);
 		@media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
 			left: 270px;
 		}
-		.toggle__border-left {
-			@include opacity(1);
-		}
-		.toggle__border-right {
-			@include opacity(0);
-		}
+		border-right: 0px;
+		border-left: 1px solid $color-green-light;
+		// .toggle__border-left {
+		// 	@include opacity(1);
+		// }
+		// .toggle__border-right {
+		// 	@include opacity(0);
+		// }
 	}
 	// &__text {
 	// 	position: absolute;

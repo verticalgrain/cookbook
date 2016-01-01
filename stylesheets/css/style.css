@@ -3305,12 +3305,6 @@ form input {
   left: 0;
   top: 0;
 }
-@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 28, ../scss/includes/_layout.scss */
-  .l-container-wrapper--absolute {
-    height: 440px;
-  }
-}
 
 /* line 37, ../scss/includes/_layout.scss */
 .l-container {
@@ -3806,7 +3800,7 @@ img {
 /* line 1, ../scss/modules/_directions.scss */
 .directions {
   transition-duration: 0.25s;
-  padding-top: 18px;
+  padding-top: 20px;
   position: relative;
   z-index: 1;
 }
@@ -3965,75 +3959,23 @@ img {
   z-index: 3;
   left: 0;
   top: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #477A74;
-  background: url("../../images/toggle.png") no-repeat center center;
+  background: url("../../images/toggle.png") no-repeat center 20px;
   background-size: 24px auto;
   transition-duration: 0.25s;
+  border-right: 1px solid #8ABAB6;
 }
-@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 1, ../scss/modules/_toggle.scss */
-  .toggle {
-    height: 440px;
-  }
-}
-/* line 14, ../scss/modules/_toggle.scss */
-.toggle__border-left, .toggle__border-right {
-  width: 1px;
-  height: 100vh;
-  /* iPhone 4 styles - due to bug with vh in iOS 6&7 */
-  display: block;
-  position: absolute;
-  top: 0px;
-  padding: 20px 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
-@media all and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 14, ../scss/modules/_toggle.scss */
-  .toggle__border-left, .toggle__border-right {
-    height: 440px;
-  }
-}
-/* line 23, ../scss/modules/_toggle.scss */
-.toggle__border-left {
-  left: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
-/* line 27, ../scss/modules/_toggle.scss */
-.toggle__border-right {
-  right: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-/* line 31, ../scss/modules/_toggle.scss */
-.toggle__inner {
-  background: #8ABAB6;
-  display: block;
-  width: 1px;
-  height: 100%;
-}
-/* line 37, ../scss/modules/_toggle.scss */
+/* line 39, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
   left: calc(100% - 50px);
+  border-right: 0px;
+  border-left: 1px solid #8ABAB6;
 }
 @media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 37, ../scss/modules/_toggle.scss */
+  /* line 39, ../scss/modules/_toggle.scss */
   .ingredients-active .toggle {
     left: 270px;
   }
-}
-/* line 42, ../scss/modules/_toggle.scss */
-.ingredients-active .toggle .toggle__border-left {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-/* line 45, ../scss/modules/_toggle.scss */
-.ingredients-active .toggle .toggle__border-right {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
