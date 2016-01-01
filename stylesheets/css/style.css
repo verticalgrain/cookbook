@@ -3960,19 +3960,19 @@ img {
   left: 0;
   top: 0;
   color: #477A74;
-  background: url("../../images/toggle.png") no-repeat center 20px;
+  background: url("../../images/toggle.png") no-repeat center 37px;
   background-size: 24px auto;
   transition-duration: 0.25s;
   border-right: 1px solid #8ABAB6;
 }
-/* line 39, ../scss/modules/_toggle.scss */
+/* line 14, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
   left: calc(100% - 50px);
   border-right: 0px;
   border-left: 1px solid #8ABAB6;
 }
 @media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 39, ../scss/modules/_toggle.scss */
+  /* line 14, ../scss/modules/_toggle.scss */
   .ingredients-active .toggle {
     left: 270px;
   }
