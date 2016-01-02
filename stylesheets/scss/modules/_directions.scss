@@ -7,23 +7,35 @@
 		line-height: 180%;
 		margin-bottom: $space*4;
 		padding-left: 50px;
+		p {
+			margin-bottom: 0px;
+		}
 	}
 	span {
 		font-weight: bold;
 		text-decoration: underline;
 	}
+	h1, h2 {
+		padding: 0 20px;
+	}
 	&__images {
 		line-height: 0;
-		padding-left: 30px;
-		h2 {
-			padding-left: 20px;
-		}
+		padding-left: 50px;
 	}
 	&__image {
-		width: calc(100% + 20px);
-		max-width: initial;
+
 	}
 	.ingredients-active & {
 		@include translateX(100%);
+	}
+	&__content {
+		position: relative;
+		overflow: hidden;
+	}
+	&__text {
+		position: relative;
+		padding: 0 20px;
+		z-index: 2;
+		pointer-events: none;
 	}
 }
