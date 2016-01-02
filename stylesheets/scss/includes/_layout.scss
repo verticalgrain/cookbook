@@ -39,8 +39,8 @@ $l-col-width: 100% / $l-column-count; // Col width in percentage
   margin: 0 auto;
   display: block;
   position: relative;
-  padding-left: $l-gutter-body;
-  padding-right: $l-gutter-body;
+  // padding-left: $l-gutter-body;
+  // padding-right: $l-gutter-body;
   zoom: 1;
   overflow: hidden;
   box-sizing: border-box;

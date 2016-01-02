@@ -37,7 +37,8 @@ module.exports = function(grunt) {
             'js/src/vendor/jquery.vide.js',
             'js/src/modules/skrollrinit.js',
             'js/src/modules/general.js',
-            'js/src/modules/toggle.js'
+            'js/src/modules/toggle.js',
+            'js/src/modules/highlight.js'
           ]
         }
       }
