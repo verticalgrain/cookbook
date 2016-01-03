@@ -3817,36 +3817,37 @@ img {
   display: inline-block;
   width: 100%;
   margin-left: 25px;
+  font-weight: bold;
 }
-/* line 18, ../scss/modules/_directions.scss */
+/* line 19, ../scss/modules/_directions.scss */
 .directions span:before {
   content: "•";
   position: absolute;
   left: 30px;
   color: #477A74;
 }
-/* line 25, ../scss/modules/_directions.scss */
+/* line 26, ../scss/modules/_directions.scss */
 .directions h1, .directions h2 {
   padding: 0 20px;
 }
-/* line 28, ../scss/modules/_directions.scss */
+/* line 29, ../scss/modules/_directions.scss */
 .directions__images {
   line-height: 0;
   padding-left: 50px;
 }
-/* line 34, ../scss/modules/_directions.scss */
+/* line 35, ../scss/modules/_directions.scss */
 .ingredients-active .directions {
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
-/* line 37, ../scss/modules/_directions.scss */
+/* line 38, ../scss/modules/_directions.scss */
 .directions__content {
   position: relative;
   overflow: hidden;
 }
-/* line 41, ../scss/modules/_directions.scss */
+/* line 42, ../scss/modules/_directions.scss */
 .directions__text {
   position: relative;
   padding: 0 20px;
@@ -4013,14 +4014,16 @@ img {
   line-height: 180%;
   position: relative;
   outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
 }
-/* line 16, ../scss/modules/_highlight.scss */
+/* line 18, ../scss/modules/_highlight.scss */
 .highlight input:checked {
   background: rgba(138, 186, 182, 0.6);
   border-top: 1px solid #8ABAB6;
   border-bottom: 1px solid #8ABAB6;
 }
-/* line 20, ../scss/modules/_highlight.scss */
+/* line 22, ../scss/modules/_highlight.scss */
 .highlight input:checked:after {
   font-family: "FontAwesome";
   speak: none;

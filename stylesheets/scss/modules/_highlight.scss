@@ -13,6 +13,8 @@
 		line-height: 180%;
 		position: relative;
 		outline: none;
+		border: none;
+		-webkit-tap-highlight-color: transparent;
 		&:checked {
 			background: rgba($color-green-light,0.6);
 			border-top: 1px solid $color-green-light;
