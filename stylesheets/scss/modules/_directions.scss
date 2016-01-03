@@ -12,8 +12,15 @@
 		}
 	}
 	span {
-		font-weight: bold;
-		text-decoration: underline;
+		display: inline-block;
+		width: 100%;
+		margin-left: 25px;
+		&:before {
+			content: "•";
+			position: absolute;
+			left: 30px;
+			color: $color-green;
+		}
 	}
 	h1, h2 {
 		padding: 0 20px;
@@ -23,7 +30,6 @@
 		padding-left: 50px;
 	}
 	&__image {
-
 	}
 	.ingredients-active & {
 		@include translateX(100%);
