@@ -2,7 +2,7 @@ app.highlight = (function($){
   'use strict';
 
   function init(){
-    highlight();
+    //highlight();
   }
 
   function highlight() {
