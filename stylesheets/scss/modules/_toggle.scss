@@ -10,13 +10,16 @@
 	background-size: 24px auto;
 	transition-duration: $transdur;
 	border-right: 1px solid $color-green-light;
-
+	border-left: 1px solid transparent;
 	.ingredients-active & {
 		left: calc(100% - 50px);
-		@media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-			left: 270px;
-		}
-		border-right: 0px;
+		// @media all and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+		// 	left: 270px;
+		// }
+		// @media all and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+		// 	left: 430px;
+		// }
+		border-right: 1px solid transparent;
 		border-left: 1px solid $color-green-light;
 	}
 	// &__text {
