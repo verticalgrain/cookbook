@@ -2,7 +2,7 @@ app.toggle = (function($){
   'use strict';
 
   function init(){
-    toggle();
+    //toggle();
   }
 
   function toggle() {

@@ -3969,6 +3969,15 @@ img {
 }
 
 /* line 1, ../scss/modules/_toggle.scss */
+#toggle {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 7, ../scss/modules/_toggle.scss */
 .toggle {
   width: 50px;
   height: 100vh;
@@ -3984,11 +3993,22 @@ img {
   border-right: 1px solid #8ABAB6;
   border-left: 1px solid transparent;
 }
-/* line 14, ../scss/modules/_toggle.scss */
+/* line 20, ../scss/modules/_toggle.scss */
 .ingredients-active .toggle {
   left: calc(100% - 50px);
   border-right: 1px solid transparent;
   border-left: 1px solid #8ABAB6;
+}
+
+/* line 34, ../scss/modules/_toggle.scss */
+#toggle:checked + .toggle {
+  border-right: 1px solid transparent;
+  border-left: 1px solid #8ABAB6;
+  left: 100%;
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
 }
 
 /* line 1, ../scss/modules/_highlight.scss */
@@ -4039,6 +4059,20 @@ img {
   transition-duration: 0.5s;
   transition-delay: 1s;
   transform: translateX(-5px);
+}
+
+/* line 1, ../scss/modules/_recipe.scss */
+.recipe {
+  display: block;
+  transition-duration: 0.25s;
+}
+
+/* line 5, ../scss/modules/_recipe.scss */
+#toggle:checked ~ .recipe {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
