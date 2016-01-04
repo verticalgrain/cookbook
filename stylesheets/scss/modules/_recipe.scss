@@ -1,0 +1,7 @@
+.recipe {
+	display: block;
+	transition-duration: $transdur;
+}
+#toggle:checked ~ .recipe {
+	@include translateX(100%);
+}
