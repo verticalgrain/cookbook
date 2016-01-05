@@ -2,6 +2,7 @@
 	display: block;
 	transition-duration: $transdur;
 }
-#toggle:checked ~ .recipe {
-	@include translateX(100%);
+#toggle:checked ~ .recipe, .ingredients-active .recipe {
+	// @include translateX(100%);
+	@include translate3d(calc(100% - 50px),0,0);
 }

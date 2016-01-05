@@ -31,11 +31,12 @@
 	// 	@include rotate(90deg);
 	// }
 }
-#toggle:checked + .toggle {
+#toggle:checked + .toggle, .ingredients-active .toggle {
 	border-right: 1px solid transparent;
 	border-left: 1px solid $color-green-light;
-	left: 100%;
-	@include translateX(-50px);
+	//left: 100%;
+	// @include translateX(-50px);
+	//@include translate3d(-50px,0,0);
 }
 
 // .toggle[href="#untoggle"] {

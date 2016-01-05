@@ -2,13 +2,15 @@ app.toggle = (function($){
   'use strict';
 
   function init(){
-    //toggle();
+    toggle();
   }
 
   function toggle() {
-    $('.toggle').on('click',function() {
-      $('body').toggleClass('ingredients-active');
-    })
+    if (navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i)) {
+      $('.toggle').on('click',function() {
+        $('body').toggleClass('ingredients-active');
+      })
+    }
   }
 
   /* Document ready
