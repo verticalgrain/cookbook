@@ -11,7 +11,7 @@ email: jamie@verticalgraindesign.com
 description: > # this means to ignore newlines until "baseurl:"
   Recipes that are mostly vegetable based, use simple ingredients, and are cheap to prepare. 
 baseurl: "/cookbook" # the subpath of your site, e.g. /blog
-url: "http://verticalgraindesign.com/cookbook" # the base hostname & protocol for your site
+url: "http://verticalgraindesign.com" # the base hostname & protocol for your site
 github_username:  verticalgrain
 
 # Build settings
