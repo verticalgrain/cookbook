@@ -4,5 +4,5 @@
 }
 #toggle:checked ~ .recipe, .ingredients-active .recipe {
 	// @include translateX(100%);
-	@include translate3d(calc(100% - 50px),0,0);
+	@include translate3d(100%,0,0);
 }

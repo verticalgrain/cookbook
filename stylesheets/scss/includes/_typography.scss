@@ -42,14 +42,6 @@ strong {
 	font-weight: bold;
 }
 
-html.touch {
-	// stuff
-}
-
-html.no-touch {
-	// stuff
-}
-
 form {
 	input {
 		@include border-radius(0);

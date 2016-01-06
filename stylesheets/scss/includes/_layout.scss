@@ -61,7 +61,7 @@ $l-col-width: 100% / $l-column-count; // Col width in percentage
       padding-right: 0;
     }
   }
-  .no-mediaqueries & {
+  .lt-ie9 & {
     min-width: $breakpoint-no-mediaqueries;
   }
   &--centered {
