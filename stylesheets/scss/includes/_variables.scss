@@ -36,7 +36,7 @@ $space: 15px;
 // Toggle
 $togglewidth: 50px;
 
-$transdur: 0.25s;
+$transdur: 0.15s;
 $transdur-medium: 0.25s;
 //Grid/Susy Guttes
 // COMMENTED OUT BECAUSE THESE ARE NOW SET IN LAYOUT.SCSS
@@ -44,27 +44,3 @@ $transdur-medium: 0.25s;
 // $gutter-column: 20px;
 // $column-count: 12;
 
-// Social icons
-$social_sites: (
-	facebook: $icon-facebook,
-	twitter: $icon-twitter,
-	google_plus: $icon-google-plus,
-	linkedin: $icon-linkedin,
-	pinterest: $icon-pinterest,
-	flickr: $icon-flickr,
-	instagram: $icon-instagram,
-	youtube: $icon-youtube,
-	vimeo: $icon-vimeo-square,
-);
-
-$social_sites-square: (
-	facebook: $icon-facebook-square,
-	twitter: $icon-twitter-square,
-	google_plus: $icon-google-plus-square,
-	linkedin: $icon-linkedin-square,
-	pinterest: $icon-pinterest-square,
-	flickr: $icon-flickr,
-	instagram: $icon-instagram,
-	youtube: $icon-youtube-square,
-	vimeo: $icon-vimeo-square,
-);
