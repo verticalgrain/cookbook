@@ -1,0 +1,9 @@
+.recipe {
+	display: block;
+  transition-duration: $transdur;
+}
+#toggle:checked ~ .recipe, .ingredients-active .recipe {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}

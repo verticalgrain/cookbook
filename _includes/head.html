@@ -1,0 +1,14 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">  <!-- minimal-ui-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<!-- <script src="js/dist/application-head.js"></script> -->
+	<!-- <script type="text/javascript"></script> -->
+</head>

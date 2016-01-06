@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background: $color-canvas;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+
+ul {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style-type: none;
+	@media (max-width: $breakpoint-mid) {
+		margin-left: 0px;
+	}
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}

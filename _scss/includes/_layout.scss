@@ -1,0 +1,236 @@
+/*
+	Layout goes in this file.
+	Layout classes should be prefixed `.l-`
+*/
+
+// $breakpoint-no-mediaqueries: 1020px; // Not necessary if using sassyplate
+// $breakpoint-large: 1200px; // Not necessary if using sassyplate
+// $breakpoint-mid: 820px; // Not necessary if using sassyplate
+// $height-full-fallback: 600px; // Not necessary if using sassyplate
+// $space: 25px; // Not necessary if using sassyplate
+
+$l-gutter-body: 20px;
+$l-gutter-column: 10px;
+$l-column-count: 12;
+$l-container-width: $breakpoint-large;
+$l-col-width: 100% / $l-column-count; // Col width in percentage
+
+// Optional fullwidth wrapper element
+.l-container-wrapper {
+  width: 100%;
+  @include clearfix;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  &--maxheight {
+    @include full-height-maxheight;
+  }
+  &--absolute {
+    @include full-height;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+// Grid container and grid columns
+.l-container {
+  max-width: $l-container-width + ($l-gutter-body*2);
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  // padding-left: $l-gutter-body;
+  // padding-right: $l-gutter-body;
+  zoom: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  &:after {
+    content:" ";
+    display: block;
+    clear: both;
+  }
+  div[class*='l-col-'] {
+    float: left;
+    padding-left: $l-gutter-column;
+    padding-right: $l-gutter-column;
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    &.l-no-gutter {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .lt-ie9 & {
+    min-width: $breakpoint-no-mediaqueries;
+  }
+  &--centered {
+    text-align: center;
+    div[class*='l-col-'] {
+      float: none;
+      display:inline-block;
+      vertical-align:top;
+    }
+  }
+  &--no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+    @media (max-width: $breakpoint-mid) {
+      padding-left: $l-gutter-body;
+      padding-right: $l-gutter-body;
+    }
+  }
+  &--full {
+    // max-width: $breakpoint-full + ($l-gutter-body*2);
+    max-width: $breakpoint-full;
+    padding: 0;
+  }
+  &--whitebg {
+    background: white;
+  }
+}
+
+@function col($columns){
+  @return $l-col-width * $columns;
+}
+
+// Classes for columns .col-1 through .col-12
+$i: 1;
+@for $i from 1 through $l-column-count {
+  %l-col-#{$i},
+  .l-col-#{$i} {
+    width: $l-col-width * $i;
+    @media (max-width: $breakpoint-mid) {
+      //width: 100% !important;
+    }
+  }
+}
+
+
+// Classes for columns .col-1 through .col-12 - mobile breakpoint
+$i: 1;
+@for $i from 1 through $l-column-count {
+  %l-col-m-#{$i},
+  .l-col-m-#{$i} {
+    @media (max-width: $breakpoint-mid) {
+      width: $l-col-width * $i !important;
+    }
+  }
+}
+
+
+// Add background colours to columns and container
+@mixin layout-test {
+  .l-container-wrapper {
+    background: rgba(orangered,0.25);
+  }
+  .l-container {
+    background: rgba(lime,0.25);
+  }
+  [class*='l-col-'] {
+    background: rgba(deeppink,0.75);
+  }
+}
+body {
+  // @include layout-test;
+}
+
+
+// Vertical spacing
+$i: 1;
+@for $i from 1 through 10 {
+  %l-space--x#{$i},
+  .l-space--x#{$i} {
+    margin-bottom: $space*$i;
+  }
+}
+
+// Vertical spacing - mid breakpoint
+$i: 1;
+@for $i from 0 through 10 {
+  %l-space--mid--x#{$i},
+  .l-space--mid--x#{$i} {
+    @media (max-width: $breakpoint-mid) {
+      margin-bottom: $space*$i;
+    }
+  }
+}
+
+.l-space {
+  &--top {
+    margin-top: $space;
+  }
+}
+
+// Center text
+.l-text-center {
+  text-align: center;
+}
+
+// Full window height class
+.l-height-full {
+  height: $height-full-fallback;
+  height: 100vh;
+  .no-vh-unit & {
+    height: $height-full-fallback;
+  }
+  &--maxheight {
+    max-height: $height-full-fallback;
+    max-height: 100vh;
+  }
+  @media (max-width: $breakpoint-mid) {
+    height: $height-full-fallback;
+  }
+}
+
+// Vertical centering classes
+.l-vertical-center {
+  display: table !important;
+  &__inner {
+    width: 100%;
+    text-align: center;
+    display: table-cell !important;
+    vertical-align: middle !important;
+  }
+}
+
+// Responsive container
+.l-container-responsive {
+  padding-bottom: 56.25%;
+  position: relative;
+  &__inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+// equal height columns
+.l-equal-height {
+  @include display-flex;
+  @include flex-wrap(wrap);
+  > div {
+    @include display-flex;
+    justify-content: center;
+  }
+  @media (max-width: $breakpoint-mid) {
+    flex-direction: column;
+  }
+}
+
+
+.l-floatright {
+  float: right;
+}
+
+.l-floatleft {
+  float: left;
+}
+
+.l-bottomborder {
+  border-bottom: 1px solid #979797;
+}
