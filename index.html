@@ -1,65 +1,15 @@
-<!doctype html>
-<!--[if IE 8 ]>    <html class="ie ie8 lt-ie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 lt-ie9 no-js" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang=""><!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">  <!-- minimal-ui-->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="stylesheets/css/style.css">
-	<!-- <script src="js/dist/application-head.js"></script> -->
-	<!-- <script type="text/javascript"></script> -->
+---
+layout: default
+---
 
-</head>
-<body>
-<!-- 	<div class="hero l-container-wrapper">
-		<div class="hero__inner l-vertical-center">
-			<div class="l-vertical-center__inner">
-				<img class="u-responsive hero__image" src="images/chiles.png" />
-				<h1>Pumpkin Pancakes</h1>
-				<p>Fantastic dense, moist pancakes with hidden vegetables</p>
-			</div>
-			<div class="hero__subtitle"></div>
-		</div>
-	</div> -->
-<!-- 	<div class="l-container-wrapper l-container--centered">
-		<div class="l-col-12">
-		</div>
-	</div> -->
-	<div class="l-container">
-		<ul>
-			<li><a href="pumpkin-blueberry-pancakes.html">Pumpkin blueberry pancakes</a></li>
-			<li><a href="beet-brownies.html">Beet brownies</a></li>
-	</div>
+<div class="home">
 
-	<!--[if lt IE 8]>
-	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+  <h1 class="page-heading">Recipes</h1>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+  </ul>
 
-	<!-- <script src="js/dist/application.js"></script> -->
-
-	<!--
-		<script>
-
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-
-		</script>
-	-->
-
-</body>
-</html>
+</div>

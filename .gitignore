@@ -1,8 +1,10 @@
+_site
+.sass-cache
+.jekyll-metadata
 *.zip
 *.gz
 *.sql
 *.DS_Store
-.sass-cache/
 compass_app_log.txt
 .node_modules/
 .ruby-version

@@ -1,0 +1,66 @@
+#toggle {
+	-webkit-opacity: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 0;
+}
+.toggle {
+	width: $togglewidth;
+	@include full-height;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	color: $color-green;
+	background: $color-canvas;
+	transition-duration: $transdur;
+	border-right: 1px solid $color-green-light;
+	border-left: 1px solid transparent;
+	// .ingredients-active & {
+	// 	left: calc(100% - 50px);
+	// 	border-right: 1px solid transparent;
+	// 	border-left: 1px solid $color-green-light;
+	// }
+	span {
+		width: 200px;
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		transform-origin: left top 0;
+		float: left;
+		position: absolute;
+		top: 21px;
+		left: 35px;
+		font-family: arial;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		&:before {
+			content: "";
+			width: 20px;
+			height: 18px;
+			float: left;
+			margin-right: 7px;
+			background: url(data:image/svg+xml,%3Csvg%20height%3D%2225px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2025%2025%22%20width%3D%2225px%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%3Ctitle/%3E%3Cdesc/%3E%3Cdefs/%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%3E%3Cg%20fill%3D%22%23477A74%22%3E%3Cpath%20d%3D%22M0%2C2%20L25%2C2%20L25%2C6%20L0%2C6%20L0%2C2%20Z%20M0%2C10%20L25%2C10%20L25%2C14%20L0%2C14%20L0%2C10%20Z%20M0%2C18%20L25%2C18%20L25%2C22%20L0%2C22%20L0%2C18%20Z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E);
+			background-repeat: no-repeat;
+			background-size: 15px;
+			background-position: center;
+		}
+		&:after {
+			content: "Ingredients";
+		}
+	}
+}
+#toggle:checked + .toggle, .ingredients-active .toggle {
+	border-right: 1px solid transparent;
+	border-left: 1px solid $color-green-light;
+	left: initial;
+	right: 0;
+
+	span {
+		&:after {
+			content: "Directions";
+		}
+	}
+}

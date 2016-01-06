@@ -1,0 +1,105 @@
+---
+layout: default
+---
+<input type="checkbox" name="toggle" id="toggle" class="u-mobileonly">
+<label class="toggle u-mobileonly" for="toggle"><span>&nbsp;</span></label>
+
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe">  
+  <div class="ingredients">
+  	<div class="ingredients__inner">
+  		<h2>Ingredients</h2>
+  		<ul class="l-space--x3">
+  			{% for ingredient in page.ingredients %}
+  				<li class="ingredient"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient.quantity }}</li>
+  			{% endfor %}
+  		</ul>
+  		<h2>Cook Times</h2>
+  		<ul class="l-space--x3">
+  			<li>{{ page.time }}</li>
+  		</ul>
+  		<h2>Tools</h2>
+  		<ul>
+  		  {% for tool in page.tools %}
+          <li>{{ tool.tool }}</li>
+        {% endfor %}
+  		</ul>
+  	</div>
+  </div>
+  <div class="directions">
+  	<div class="directions__inner l-space--x3">
+  		<h1>{{ page.title }}</h1>
+  		<h2>Directions</h2>
+  		<div class="directions__content">
+  			<form class="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  				<input type="radio" name="highlight">
+  			</form>
+  			<div class="directions__text">
+  				{{ content }}
+  			</div>
+  		</div>
+  	</div>
+  	<div class="directions__images">
+  		<h2>Pictures</h2>
+  		<img class="directions__image" src="images/recipes/pumpkin-pancakes-1.jpg" />
+  	</div>
+  </div>
+</div>
