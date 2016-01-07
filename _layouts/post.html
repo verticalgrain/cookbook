@@ -98,8 +98,10 @@ layout: default
   		</div>
   	</div>
   	<div class="directions__images">
-  		<h2>Pictures</h2>
-  		<img class="directions__image" src="images/recipes/pumpkin-pancakes-1.jpg" />
+      {% if page.image %}
+    		<h2>Pictures</h2>
+    		<img class="directions__image" src="{{ site.baseurl }}/images/{{ page.image }}" />
+      {% endif %}  
   	</div>
   </div>
 </div>

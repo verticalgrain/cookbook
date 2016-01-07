@@ -39,7 +39,7 @@ tools:
  - tool: Griddle, or pan
  - tool: Spatula
  - tool: Baking sheet
-imgage: test.jpg
+imgage: pumpkin-pancakes.jpg
 ---
 Preheat oven to 200˚F.
 
