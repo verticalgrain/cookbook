@@ -28,7 +28,7 @@ tools:
  - tool: Mixing bowl - large
  - tool: Measuring cups / spoons
  - tool: Mixing spoon
-image: test.jpg
+image: pumpkin-pancakes.jpg
 ---
 Preheat oven to 350˚F. Grease a 9x9 baking dish.
 
