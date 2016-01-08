@@ -2,7 +2,8 @@
 layout: post
 title:  "Pumpkin Blueberry Pancakes"
 date:   2016-01-06 10:49:27 -0800
-categories: breakfast
+tags: 
+ - breakfast
 time: 1 hour
 ingredients:
  - ingredient: Flour
@@ -39,7 +40,7 @@ tools:
  - tool: Griddle, or pan
  - tool: Spatula
  - tool: Baking sheet
-imgage: pumpkin-pancakes.jpg
+image: pumpkin-pancakes.jpg
 ---
 Preheat oven to 200˚F.
 
