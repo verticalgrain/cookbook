@@ -2,7 +2,7 @@
 layout: default
 ---
 <input type="checkbox" name="toggle" id="toggle" class="u-mobileonly">
-<label class="toggle u-mobileonly" for="toggle"><span>&nbsp;</span></label>
+<label class="toggle" for="toggle"><span>&nbsp;</span></label>
 
 <div class="recipe" itemscope itemtype="http://schema.org/Recipe">  
   <div class="ingredients">
@@ -28,6 +28,11 @@ layout: default
   <div class="directions">
   	<div class="directions__inner l-space--x3">
   		<h1>{{ page.title }}</h1>
+      <ul class="tags">
+        {% for tag in page.tags %}
+          <li class="tags__item"><a href="">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
   		<h2>Directions</h2>
   		<div class="directions__content">
   			<form class="highlight">
