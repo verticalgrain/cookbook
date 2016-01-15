@@ -33,14 +33,8 @@ image: pumpkin-pancakes.jpg
 ---
 Preheat oven to 350˚F. Grease a 9x9 baking dish.
 
-&nbsp;
-
 In a large mixing bowl, whisk together the: <span>1 1/4 cups gluten free flour,</span> <span>1/4 cup cocoa powder,</span> <span>1/3 cup sugar,</span> <span>1 teaspoon baking powder,</span> <span>1/3 cup chocolate chips</span>
 
-&nbsp;
-
 Add the: <span>1/3 cup beet puree,</span> <span>3 large eggs,</span> <span>1/4 cup coconut oil (melted),</span> <span>and 1 teaspoon vanilla</span>
-
-&nbsp;
 
 Transfer batter into greased baking dish and cook at 350˚F for 27.5 minutes, or until it passes the clean toothpick test.
