@@ -44,18 +44,14 @@ image: pumpkin-pancakes.jpg
 ---
 Preheat oven to 200˚F.
 
-&nbsp;
-
 In a medium mixing bowl, whisk together the:
 	<span>1¼ cups flour,</span>
 	<span>1 tbsp. sugar,</span>
-	<span>2 tsp. baking powder,</span>
+	<span>2 tsp. <i></i>baking powder,</span>
 	<span>¼ tsp. salt,</span>
 	<span>¾ tsp. cinnamon,</span>
 	<span>¼ tsp. nutmeg,</span>
 	<span>dash ginger</span>
-
-&nbsp;
 
 In a small mixing bowl, combine the:
 	<span>1 cup milk,</span>
@@ -63,18 +59,10 @@ In a small mixing bowl, combine the:
 	<span>1 egg,</span>
 	<span>2 tbsp. oil or butter</span>
 
-&nbsp;
-
 Stir into the dry ingredients and mix until just combined.
-
-&nbsp;
 
 Pour batter on a greased griddle or skillet heated to medium heat (325˚F). The pancakes won't spread much, so use the back of a spoon to shape into a circle if desired. Sprinkle blueberries on top. Flip when bubbles begin forming on top. Cook until golden brown.
 
-&nbsp;
-
 Place pancakes on the baking sheet and pop in the oven to warm until served.
-
-&nbsp;
 
 Serve with maple syrup, fruit, or whatever you like.
