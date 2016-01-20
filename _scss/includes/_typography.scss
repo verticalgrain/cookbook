@@ -50,3 +50,11 @@ form {
 		-webkit-appearance: none;
 	}
 }
+
+@mixin utility-text {
+	color: $color-green;
+	font-family: $font-sans;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
