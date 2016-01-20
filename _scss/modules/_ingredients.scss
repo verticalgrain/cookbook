@@ -1,5 +1,5 @@
 .ingredients {
-	transition-duration: $transdur-medium;
+	transition-duration: $transdur;
 	height: 100%;
 	width: 100%;
 	padding-top: 20px;
@@ -8,16 +8,19 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	// @media (max-width: $breakpoint-mid) {
-		position: fixed;
-		left: -100%;
-		float: none;
-		.ingredients-active & {
-			left: 0%;
-		}
+	position: fixed;
+	left: -100%;
+	float: none;
 	// }
 	&__inner {
 		padding-left: 25px;
 		margin: 0 $togglewidth $space*4 0;
 		line-height: 160%;
 	}
+}
+
+#toggle:checked ~ .ingredients, .ingredients-active .ingredients {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }

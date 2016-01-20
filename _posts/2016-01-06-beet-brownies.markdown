@@ -3,7 +3,8 @@ layout: post
 title:  "Beet Brownies"
 date:   2016-01-06 10:49:27 -0800
 tags: 
- - dessert
+ - type: mealtype
+   tag: dessert
 time: 1 hour
 ingredients:
  - ingredient: Flour
