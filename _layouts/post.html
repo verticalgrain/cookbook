@@ -4,36 +4,40 @@ layout: default
 <input type="checkbox" name="toggle" id="toggle" class="u-mobileonly">
 <label class="toggle" for="toggle">
   <span>&nbsp;</span>
-  <a href="{{ site.baseurl }}/">Home</a>
+  <a href="{{ site.baseurl }}/" title="Return to the homepage">Home</a>
+  {% if page.image %}
+    <a href="#images" title="Images of this recipe">&nbsp;</a>
+  {% endif %}
 </label>
 
-<div class="recipe" itemscope itemtype="http://schema.org/Recipe">  
-  <div class="ingredients">
-  	<div class="ingredients__inner">
-  		<h2>Ingredients</h2>
-  		<ul class="l-space--x3">
-  			{% for ingredient in page.ingredients %}
-  				<li class="ingredient"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient.quantity }}</li>
-  			{% endfor %}
-  		</ul>
-  		<h2>Total Time:</h2>
-  		<ul class="l-space--x3">
-  			<li>{{ page.time }}</li>
-  		</ul>
-  		<h2>Tools</h2>
-  		<ul>
-  		  {% for tool in page.tools %}
-          <li>{{ tool.tool }}</li>
-        {% endfor %}
-  		</ul>
-  	</div>
+<div class="ingredients">
+  <div class="ingredients__inner">
+    <h2>Ingredients</h2>
+    <ul class="l-space--x3">
+      {% for ingredient in page.ingredients %}
+        <li class="ingredient"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient.quantity }}</li>
+      {% endfor %}
+    </ul>
+    <h2>Total Time:</h2>
+    <ul class="l-space--x3">
+      <li>{{ page.time }}</li>
+    </ul>
+    <h2>Tools</h2>
+    <ul>
+      {% for tool in page.tools %}
+        <li>{{ tool.tool }}</li>
+      {% endfor %}
+    </ul>
   </div>
+</div>
+
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe">  
   <div class="directions">
   	<div class="directions__inner l-space--x3">
   		<h1>{{ page.title }}</h1>
       <ul class="tags">
         {% for tag in page.tags %}
-          <li class="tags__item"><a href="">{{ tag }}</a></li>
+          <li class="tags__item tags__item__{{ tag.type }}"><a href="">{{ tag.tag }}</a></li>
         {% endfor %}
       </ul>
   		<h2>Directions</h2>
@@ -43,7 +47,7 @@ layout: default
   			</div>
   		</div>
   	</div>
-  	<div class="directions__images">
+  	<div class="directions__images" id="images">
       {% if page.image %}
     		<h2>Pictures</h2>
     		<img class="directions__image" src="{{ site.baseurl }}/images/{{ page.image }}" />

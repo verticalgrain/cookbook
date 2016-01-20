@@ -3,9 +3,12 @@ layout: post
 title:  "Roasted Cauliflower"
 date:   2016-01-06 18:49:27 -0800
 tags: 
- - side 
- - dinner
- - snack
+ - type: mealtype
+   tag: side 
+ - type: mealtype
+   tag: dinner
+ - type: mealtype
+   tag: snack
 time: 1 hour 30 minutes
 ingredients:
  - ingredient: Cauliflower

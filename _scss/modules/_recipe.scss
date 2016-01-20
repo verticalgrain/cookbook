@@ -1,6 +1,10 @@
 .recipe {
 	display: block;
   transition-duration: $transdur;
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 #toggle:checked ~ .recipe, .ingredients-active .recipe {
   -webkit-transform: translateX(100%);
