@@ -12,7 +12,6 @@
 	z-index: 3;
 	left: 0;
 	top: 0;
-	color: $color-green;
 	background: $color-canvas;
 	transition-duration: $transdur;
 	border-right: 1px solid $color-green-light;
@@ -33,10 +32,7 @@
 		position: absolute;
 		top: 21px;
 		left: 35px;
-		font-family: arial;
-		font-size: 14px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		@include utility-text;
 		&:before {
 			content: "";
 			width: 20px;
@@ -51,6 +47,16 @@
 		&:after {
 			content: "Ingredients";
 		}
+	}
+	a {
+		@include utility-text;
+		font-size: 12px;
+		padding: 20px 0;
+		width: 50px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
 	}
 }
 #toggle:checked + .toggle, .ingredients-active .toggle {
