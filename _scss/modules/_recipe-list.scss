@@ -2,14 +2,22 @@
 	&__item {
 		width: 33.33%;
 		height: auto;
-		padding: 0 20px 20px 0;
+		padding: 20px 20px 0 0;
 		float: left;
 		position: relative;
 	}
-	&__title {
-		position: absolute;
-	}
 	&__image {
-
+		display: block;
+		background-color: $color-green-light;
+		background-size: cover;
+		background-position: center center;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+	}
+	&__title {
+		font-size: 18px;
+		padding: 20px 0;
+		line-height: 120%;
+		color: $color-green;
 	}
 }
