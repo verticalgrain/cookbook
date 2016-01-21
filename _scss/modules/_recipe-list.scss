@@ -1,0 +1,15 @@
+.recipe-list {
+	&__item {
+		width: 33.33%;
+		height: auto;
+		padding: 0 20px 20px 0;
+		float: left;
+		position: relative;
+	}
+	&__title {
+		position: absolute;
+	}
+	&__image {
+
+	}
+}

@@ -4,12 +4,31 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Recipes</h1>
+  <div class="container">
+    
+    <div class="l-col-12 l-space--x2">
+      <h1 class="page-heading">Recipes</h1>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+    <div class="l-col-4 l-col-m-12">
+      <h3>Good Recipes</h3>
+    </div>
+
+    <div class="l-col-8 l-col-m-12">
+      <ul class="recipe-list">
+        {% for post in site.posts %}
+          <li class="recipe-list__item">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <div class="recipe-list__title">{{ post.title }}</div>
+              {% if post.image %}
+                <img class="recipe-list__image" src="{{ site.baseurl }}/images/{{ post.image }}" />
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  
+  </div><!-- .container -->
 
 </div>
