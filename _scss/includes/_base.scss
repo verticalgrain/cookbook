@@ -3,6 +3,12 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	background: $color-canvas;
+	max-width: $breakpoint-large;
+
+}
+
+body {
+	max-width: $breakpoint-large;
 }
 
 *,

@@ -1,14 +1,18 @@
-document.getElementById('directions__text').onclick = function(e){
+var highlightArea =  document.getElementById('directions__text');
+if (typeof(highlightArea) != 'undefined' && highlightArea != null)
+{
+  document.getElementById('directions__text').onclick = function(e){
 
-  var element =  document.getElementById('highlighter');
-  if (typeof(element) != 'undefined' && element != null)
-  {
-    removeExistingHighlight();
-    setTimeout(function() {
+    var element =  document.getElementById('highlighter');
+    if (typeof(element) != 'undefined' && element != null)
+    {
+      removeExistingHighlight();
+      setTimeout(function() {
+        insertHighlightAtCaret('<b id="highlighter"><div></div></b>');
+      },5);
+    } else {
       insertHighlightAtCaret('<b id="highlighter"><div></div></b>');
-    },5);
-  } else {
-    insertHighlightAtCaret('<b id="highlighter"><div></div></b>');
+    }
   }
 }
 
