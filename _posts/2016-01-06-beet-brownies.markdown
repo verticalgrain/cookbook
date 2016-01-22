@@ -30,7 +30,7 @@ tools:
  - tool: Mixing bowl - large
  - tool: Measuring cups / spoons
  - tool: Mixing spoon
-image: pumpkin-pancakes.jpg
+image: beet-brownie.jpg
 ---
 Preheat oven to 350˚F. Grease a 9x9 baking dish.
 

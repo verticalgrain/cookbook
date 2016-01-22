@@ -4,8 +4,9 @@ layout: default
 
 <div class="l-container">
   
-  <div class="l-col-12 l-space--x2">
-    <h1 class="page-heading">Recipes</h1>
+  <div class="l-col-12 l-space--x2 l-text-center">
+    <img src="{{ site.baseurl }}/images/real-recipes-logo.jpg" />
+    <h4 class="page-heading">Real simple recipes made from whole foods, with a bias for vegetables and small budgets. Low sugar, high fiber, no fancy ingredients.</h4>
   </div>
 
   <div class="l-col-3 l-col-m-12">
@@ -28,29 +29,3 @@ layout: default
   </div>
 
 </div><!-- .container -->
-
-<div class="l-container-wrapper section section--breakfasts">
-  <div class="l-container">
-
-    <div class="l-col-3 l-col-m-12">
-      <h3>Good Recipes</h3>
-    </div>
-
-    <div class="l-col-9 l-col-m-12">
-      <ul class="recipe-list">
-        {% for post in site.posts %}
-          <li class="recipe-list__item">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {% if post.image %}
-                <div class="recipe-list__image" style="background-image: url({{ site.baseurl }}/images/{{ post.image }});"></div>
-              {% endif %}
-              <div class="recipe-list__title">{{ post.title }}</div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-
-  </div>
-</div>
