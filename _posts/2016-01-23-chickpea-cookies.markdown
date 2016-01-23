@@ -39,7 +39,9 @@ image-credit:
 ---
 Preheat oven to 350˚F.
 
-Combine the <span>1 12 ounce can chickpeas</span> <span>1/2 cup nut butter (sunflower, almond, cashew, peanut, etc)</span> <span>1/4 cup brown sugar</span> <span>1/4 cup maple syrup</span> <span>2 tsp. cup vanilla</span> <span>1/4 tbsp. baking powder</span> in the blender or food processor. Blend well, until no whole chick peas remain, and mixture is smooth.
+Combine, in the blender or food processor, the: <span>1 12 ounce can chickpeas</span> <span>1/2 cup nut butter (sunflower, almond, cashew, peanut, etc)</span> <span>1/4 cup brown sugar</span> <span>1/4 cup maple syrup</span> <span>2 tsp. cup vanilla</span> <span>1/4 tbsp. baking powder</span> 
+
+Blend well, until no whole chick peas remain, and mixture is smooth.
 
 Add <span>1/2 cup chocolate chips</span> to mixture and stir. 
 
