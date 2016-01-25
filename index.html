@@ -2,14 +2,25 @@
 layout: default
 ---
 
+<div class="l-container-wrapper" style="background-color: #F3E37C;">
+  <div class="l-container l-container--centered">
+    <div class="l-col-8">
+      <div class="hero">
+        <img src="{{ site.baseurl }}/images/hero1.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="l-container-wrapper">
   <div class="l-container l-container--centered">
-    
-    <div class="l-col-6 l-col-m-12 l-space--x2 l-text-center">
-      <img class="logo" src="{{ site.baseurl }}/images/real-recipes-logo.jpg" />
-      <h4 class="page-heading">Real simple recipes made from whole foods, with a bias for vegetables and small budgets. Low sugar, high fiber, no fancy ingredients.</h4>
+    <div class="l-space--x4">
     </div>
-
+    <div class="l-col-10 l-col-m-12 l-text-center">
+      <h4 class="page-heading">Real simple recipes, made from whole foods, on small budgets. High in vegetables and fiber, Low in sugar flour and dairy. No fancy pants ingredients.</h4>
+    </div>
+    <div class="l-space--x4">
+    </div>
   </div><!-- .container -->
 </div><!-- .container-wrapper -->
 
@@ -17,7 +28,6 @@ layout: default
   <div class="l-container l-container--centered">
 
     <div class="l-col-10 l-col-m-12">
-      <h3>Good Recipes</h3>
       <ul class="recipe-list">
         {% for post in site.posts %}
           <li class="recipe-list__item l-col-4 l-col-m-6">
