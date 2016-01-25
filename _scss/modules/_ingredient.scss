@@ -2,15 +2,17 @@
 	@include clearfix;
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 	&:before {
 		content: "";
 		width: 100%;
-		height: 2px;
+		height: 27px;
 		display: block;
 		position: absolute;
 		z-index: 1;
 		left: 0;
 		top: 15px;
+		border-top: 2px dotted rgba(black,0.15);
 		border-bottom: 2px dotted rgba(black,0.15);
 	}
 	&__name, &__quantity {
@@ -25,6 +27,6 @@
 	&__quantity {
 		float: right;
 		padding: 0 20px 0 5px;
-		color: #5b504b;
+		color: rgba($color-base, 0.6);
 	}
 }

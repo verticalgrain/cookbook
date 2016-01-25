@@ -6,7 +6,10 @@
 	&__inner {
 		line-height: 180%;
 		margin-bottom: $space*4;
-		padding-left: 50px;
+		padding-left: 0px;
+		@media (max-width: $breakpoint-mid) {
+			padding-left: 50px;
+		}
 	}
 	span {
 		display: inline-block;

@@ -1,11 +1,17 @@
 .recipe {
 	display: block;
   transition-duration: $transdur;
-  position: fixed;
-  width: 100%;
+  position: relative;
+  float: left;
+  width: 65%;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  @media (max-width: $breakpoint-mid) {
+    position: fixed;
+    float: none;
+    width: 100%;
+  }
 }
 #toggle:checked ~ .recipe, .ingredients-active .recipe {
   -webkit-transform: translateX(100%);
