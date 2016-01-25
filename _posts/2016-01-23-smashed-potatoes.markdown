@@ -9,6 +9,8 @@ tags:
    tag: dinner
  - type: mealtype
    tag: breakfast
+ - type: gluten
+   tag: gluten free
 time: 40 minutes
 ingredients:
  - ingredient: Small new potatoes

@@ -19,11 +19,8 @@
 	}
 	&__inner {
 		padding-left: 25px;
-		margin: 0 0 $space*4 0;
+		margin: 0 $togglewidth $space*4 0;
 		line-height: 160%;
-		@media (max-width: $breakpoint-mid) {
-			margin-right: $togglewidth;
-		}
 	}
 }
 

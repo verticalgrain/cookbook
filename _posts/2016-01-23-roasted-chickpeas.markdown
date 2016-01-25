@@ -7,6 +7,8 @@ tags:
    tag: side 
  - type: mealtype
    tag: dinner
+ - type: gluten
+   tag: gluten free
 time: 45 minutes
 ingredients:
  - ingredient: Chickpeas (garbanzo beans)

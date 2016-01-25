@@ -9,6 +9,8 @@ tags:
    tag: dinner
  - type: mealtype
    tag: snack
+ - type: gluten
+   tag: gluten free
 time: 1 hour 30 minutes
 ingredients:
  - ingredient: Cauliflower
