@@ -6,6 +6,7 @@
 	z-index: 0;
 }
 .toggle {
+	display: none;
 	width: $togglewidth;
 	@include full-height;
 	position: fixed;
@@ -21,6 +22,9 @@
 	// 	border-right: 1px solid transparent;
 	// 	border-left: 1px solid $color-green-light;
 	// }
+	@media (max-width: $breakpoint-mid) {
+		display: block;
+	}
 	span {
 		width: 160px;
 		-webkit-transform: rotate(90deg);

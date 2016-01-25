@@ -5,9 +5,6 @@ $font-serif: 'Gentium Basic';
 $font-sans: Arial;
 $font-base: $font-serif, Times, serif;
 
-//$font-icon: 'FontAwesome';
-// Font weights
-// Note that these are essential for the font_weight mixin in _mixins.scss
 $font-weight-bold: 700;
 
 // Font sizes
@@ -16,12 +13,16 @@ $font-size-body: 16;
 // Letter spacing
 
 // Colours
-// These are just defaults. You're going to want to go ahead and change them.
-$color-base: #3A312D; // the colour of most body text
+$color-base: #22181C; // the colour of most body text
 $color-green: #477A74;
 $color-green-light: #8ABAB6;
+$color-brown: #442220;
+$color-purple: #2E0014;
+$color-orange: #F0803C;
+$color-pink: #E84855;
+$color-red: #DD0001;
 
-$color-canvas: rgb(160,211,207); // this is probably the background colour of the body element
+$color-canvas: rgb(160,211,207); // RR teal
 
 // Breakpoints
 $breakpoint-full: 1400px;
@@ -42,9 +43,4 @@ $togglewidth: 50px;
 
 $transdur: 0.15s;
 $transdur-medium: 0.25s;
-//Grid/Susy Guttes
-// COMMENTED OUT BECAUSE THESE ARE NOW SET IN LAYOUT.SCSS
-// $gutter-body: 40px;
-// $gutter-column: 20px;
-// $column-count: 12;
 
