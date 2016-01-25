@@ -17,6 +17,10 @@
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		@media (max-width: $breakpoint-mid) {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
 	}
 	&__link {
 		width: 100%;
