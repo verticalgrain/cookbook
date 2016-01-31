@@ -5,12 +5,13 @@ date:   2016-01-06 10:49:27 -0800
 tags: 
  - type: mealtype
    tag: breakfast
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
 time: 1 hour
 ingredients:
- - ingredient: Flour
+ - ingredient: Flour (or substitution)
    quantity: 1 1/4 cups all-purpose
- - ingredient: Brown Sugar
-   quantity: 2 tbsp.
  - ingredient: Baking Powder
    quantity: 2 tsp.
  - ingredient: Salt

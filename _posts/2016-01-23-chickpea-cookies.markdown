@@ -7,6 +7,10 @@ tags:
    tag: dessert
  - type: mealtype
    tag: snack
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
+ - item: vegan   
 time: 40 minutes
 ingredients:
  - ingredient: Chickpeas (garbanzo beans)

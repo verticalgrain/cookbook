@@ -5,8 +5,9 @@ date:   2016-01-26 13:08:00 -0800
 tags: 
  - type: mealtype
    tag: dinner
- - type: gluten
-   tag: gluten free
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
 time: 30 minutes
 ingredients:
  - ingredient: Vegetable oil
@@ -41,9 +42,9 @@ tools:
  - tool: Large pot
  - tool: Measuring spoons
  - tool: Stirring utensil
-image: 
+image: fragrant-curry.jpg
 image-credit: 
- - name:
+ - name: Real Reacipes
  - link:
 ---
 
