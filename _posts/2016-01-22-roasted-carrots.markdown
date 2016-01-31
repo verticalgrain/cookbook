@@ -7,8 +7,10 @@ tags:
    tag: side 
  - type: mealtype
    tag: dinner
- - type: gluten
-   tag: gluten free
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
+ - item: vegan
 time: 30 minutes
 ingredients:
  - ingredient: Carrots

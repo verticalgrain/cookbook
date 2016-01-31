@@ -1,0 +1,7 @@
+.time {
+  font-style: italic;
+  margin-bottom: 12px;
+  &__title, &__time {
+    display: inline;
+  }
+}

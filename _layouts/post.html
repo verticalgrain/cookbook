@@ -12,15 +12,14 @@ layout: default
 
 <div class="ingredients">
   <div class="ingredients__inner">
+    <div class="time l-space--x1">
+      <div class="time__time"><strong class="time__title">Total Time:</strong> {{ page.time }}</div>
+    </div>
     <h2>Ingredients</h2>
-    <ul class="l-space--x3">
+    <ul class="l-space--x2">
       {% for ingredient in page.ingredients %}
         <li class="ingredient"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient.quantity }}</li>
       {% endfor %}
-    </ul>
-    <h2>Total Time:</h2>
-    <ul class="l-space--x3">
-      <li>{{ page.time }}</li>
     </ul>
     <h2>Tools</h2>
     <ul>
@@ -38,6 +37,11 @@ layout: default
       <ul class="tags">
         {% for tag in page.tags %}
           <li class="tags__item tags__item__{{ tag.type }}"><a href="">{{ tag.tag }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul class="nutrition">
+        {% for nutrition-icon in page.nutrition-icons %}
+          <li class="nutrition__icon nutrition__icon--{{ nutrition-icon.item }}"><a class="nutrition__link" href=""><div class="u-accessible-hide">{{ nutrition-icon.item }}</div></a></li>
         {% endfor %}
       </ul>
   		<h2>Directions</h2>

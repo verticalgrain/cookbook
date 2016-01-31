@@ -2,15 +2,17 @@
 layout: post
 title:  "Smashed Potatoes"
 date:   2016-01-23 12:30:00 -0800
-tags: 
+tags:
  - type: mealtype
    tag: side
  - type: mealtype
    tag: dinner
  - type: mealtype
    tag: breakfast
- - type: gluten
-   tag: gluten free
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
+ - item: vegan
 time: 40 minutes
 ingredients:
  - ingredient: Small new potatoes
@@ -25,11 +27,11 @@ tools:
  - tool: Large pot
  - tool: Large pan or skillet
 image: smashed-potatoes.jpg
-image-credit: 
+image-credit:
  - name:
  - link:
 ---
-Fill a large pot with water and a dash of salt. Bring to a boil. 
+Fill a large pot with water and a dash of salt. Bring to a boil.
 
 Rinse and scrub the <span>2 pounds small new potatoes</span> and add to boiling water. Boil for 10 - 15 minutes, or until almost tender when pierced with a fork.
 

@@ -5,9 +5,12 @@ date:   2016-01-06 10:49:27 -0800
 tags: 
  - type: mealtype
    tag: dessert
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
 time: 1 hour
 ingredients:
- - ingredient: Flour
+ - ingredient: Flour (or substitutions)
    quantity: 1 1/4 cups
  - ingredient: Cocoa Powder
    quantity: 1/4 cup
