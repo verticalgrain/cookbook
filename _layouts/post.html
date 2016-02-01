@@ -20,6 +20,10 @@ layout: default
       {% for ingredient in page.ingredients %}
         <li class="ingredient"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient.quantity }}</li>
       {% endfor %}
+      {% for ingredient-optional in page.ingredients-optional %}
+        <li class="ingredient__subtitle"><strong>Optional Ingredients</strong></p></li>
+        <li class="ingredient ingredient--optional"><div class="ingredient__name" itemprop="recipeIngredient">{{ ingredient-optional.ingredient }}</div> <div class="ingredient__quantity">{{ ingredient-optional.quantity }}</li>
+      {% endfor %}
     </ul>
     <h2>Tools</h2>
     <ul>
