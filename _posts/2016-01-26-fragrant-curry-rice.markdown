@@ -44,7 +44,7 @@ tools:
  - tool: Stirring utensil
 image: fragrant-curry.jpg
 image-credit: 
- - name: Real Reacipes
+ - name: Real Recipes
  - link:
 ---
 
