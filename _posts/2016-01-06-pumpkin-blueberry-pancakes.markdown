@@ -48,7 +48,6 @@ Preheat oven to 200˚F.
 
 In a medium mixing bowl, whisk together the:
 	<span>1¼ cups flour,</span>
-	<span>1 tbsp. sugar,</span>
 	<span>2 tsp. <i></i>baking powder,</span>
 	<span>¼ tsp. salt,</span>
 	<span>¾ tsp. cinnamon,</span>
