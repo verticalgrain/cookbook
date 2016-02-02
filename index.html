@@ -33,7 +33,7 @@ layout: default
           <li class="recipe-list__item l-col-4 l-col-m-6">
             <a class="recipe-list__link" href="{{ site.baseurl }}{{ post.url }}">
               {% if post.image %}
-                <div class="recipe-list__image" style="background-image: url({{ site.baseurl }}/images/{{ post.image }});"></div>
+                <div class="recipe-list__image b-lazy" data-src="{{ site.baseurl }}/images/{{ post.image }}"></div>
               {% else %}
                 <div class="recipe-list__image  recipe-list__image--noimage"></div>
               {% endif %}
