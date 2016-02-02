@@ -44,10 +44,10 @@ tools:
  - tool: Potato masher
  - tool: Knife
  - tool: Cutting board
-image:
+image: sweet-potato-burritos.jpg
 image-credit: 
- - name: Real Recipes
- - link:
+ - name: www.foodofbliss.com
+ - link: http://www.foodofbliss.com/2012/06/20/sweet-potato-bean-burritos
 ---
 
 Cut the <span>2 large sweet potatoes</span> into about 8 pieces and add to a pot of boiling water. Boil for 15 minutes or until soft when pierced with a fork. Drain water and return sweet potatoes to large pot. Mash with a potato masher.

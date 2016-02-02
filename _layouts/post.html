@@ -56,6 +56,9 @@ layout: default
   		</div>
   	</div>
   	<div class="directions__images" id="images">
+<!--       {% if page.image-credit %}
+        <div class="image-credit">Image credit: <a href="{{ page.image-credit.link }}">{{ page.image-credit.name }}</a></div>
+      {% endif %} -->
       {% if page.image %}
     		<h2>Pictures</h2>
     		<img class="directions__image" src="{{ site.baseurl }}/images/{{ page.image }}" />
