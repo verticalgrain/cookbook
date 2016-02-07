@@ -28,7 +28,7 @@ tools:
  - tool: Cutting board
  - tool: Knife
  - tool: Wooden spoon
-image: sweet-potato-breakfast-hash.jpg
+image: sweet-potato-hash.jpg
 image-credit: 
  - name: Real Recipes
  - link: 
