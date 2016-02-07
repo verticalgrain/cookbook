@@ -26,10 +26,9 @@ tools:
  - tool: Baking sheet
  - tool: Measuring spoons
  - tool: Knife
- - tool: Cutting board
 image: pita-chips.jpg
 image-credit: 
- - name: Real Recipes
+ - name: PBS Parents
  - link: http://www.pbs.org/parents/kitchenexplorers/2013/06/04/homemade-pita-chips
 ---
 
