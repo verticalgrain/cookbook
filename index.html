@@ -44,6 +44,11 @@ layout: default
                 <div class="recipe-list__image  recipe-list__image--noimage"></div>
               {% endif %}
               <div class="recipe-list__title">{{ post.title }}</div>
+              <ul class="nutrition">
+                {% for nutrition-icon in post.nutrition-icons %}
+                  <li class="nutrition__icon nutrition__icon--{{ nutrition-icon.item }}"><div class="u-accessible-hide">{{ nutrition-icon.item }}</div></li>
+                {% endfor %}
+              </ul>
             </a>
           </li>
         {% endfor %}
