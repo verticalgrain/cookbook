@@ -2,9 +2,7 @@
 layout: post
 title:  "Pumpkin Blueberry Pancakes"
 date:   2016-01-06 10:49:27 -0800
-tags: 
- - type: mealtype
-   tag: breakfast
+categories: [breakfast]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

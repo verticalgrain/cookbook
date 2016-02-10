@@ -2,9 +2,7 @@
 layout: post
 title:  "Fragrant Curry with Rice"
 date:   2016-01-26 13:08:00 -0800
-tags: 
- - type: mealtype
-   tag: dinner
+categories: [dinner]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

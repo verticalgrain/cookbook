@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="l-container-wrapper" style="background-color: #F3E37C;">
+  <div class="l-container l-container--centered">
+    <div class="l-col-8">
+      <div class="hero">
+        <img class="hero__image" src="{{ site.baseurl }}/images/hero1.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-container-wrapper">
+  <div class="l-container l-container--centered">
+    <div class="l-space--x4 l-space--mid--x1">
+    </div>
+    <div class="l-col-10 l-col-m-12 l-text-center">
+      <h4 class="page-heading">Real simple recipes, made from whole foods, on small budgets. High in vegetables, low in grains, sugar and dairy. No fancy pants ingredients.</h4>
+    </div>
+    <div class="l-space--x4 l-space--mid--x2">
+    </div>
+  </div><!-- .container -->
+</div><!-- .container-wrapper -->
+
+<div class="l-container-wrapper">
+  <div class="l-container l-container--centered">
+    
+    <ul class="tags">
+      {% for category in site.categories %}
+        <li class="tags__item tags__item__{{ category | first | remove:' ' }}"><a href="{{ site.baseurl }}/categories/#{{ category | first | remove:' ' }}">{{ category | first }}{% if forloop.last %}{% else %}, {% endif %}</a></li>
+      {% endfor %}
+    </ul>
+
+    <div class="l-col-10 l-col-m-12">
+      <ul class="recipe-list">
+        {% for post in site.posts %}
+          <li class="recipe-list__item l-col-4 l-col-m-6">
+            <a class="recipe-list__link" href="{{ site.baseurl }}{{ post.url }}">
+              {% if post.image %}
+                <div class="recipe-list__image b-lazy" data-src="{{ site.baseurl }}/images/{{ post.image }}"></div>
+              {% else %}
+                <div class="recipe-list__image  recipe-list__image--noimage"></div>
+              {% endif %}
+              <div class="recipe-list__title">{{ post.title }}</div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    {% for category in site.categories %}
+      <div class="l-col-10 l-col-m-12 category-section" id="{{ category | first | remove:' ' }}">
+        <h2>{{ category | first }}</h2>
+        <ul class="recipe-list">
+          {% for posts in category %}
+            {% for post in posts %}
+              {% if post.url %}
+                <li class="recipe-list__item l-col-4 l-col-m-6">
+                  <a class="recipe-list__link" href="{{ site.baseurl }}{{ post.url }}">
+                    {% if post.image %}
+                      <div class="recipe-list__image b-lazy" data-src="{{ site.baseurl }}/images/{{ post.image }}"></div>
+                    {% else %}
+                      <div class="recipe-list__image  recipe-list__image--noimage"></div>
+                    {% endif %}
+                    <div class="recipe-list__title">{{ post.title }}</div>
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+
+
+  </div><!-- .container -->
+</div><!-- .container-wrapper -->

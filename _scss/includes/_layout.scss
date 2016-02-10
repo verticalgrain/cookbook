@@ -22,6 +22,8 @@ $l-col-width: 100% / $l-column-count; // Col width in percentage
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
+  z-index: 1;
   &--maxheight {
     @include full-height-maxheight;
   }
@@ -30,6 +32,10 @@ $l-col-width: 100% / $l-column-count; // Col width in percentage
     position: absolute;
     left: 0;
     top: 0;
+  }
+  &--shadow {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 25px 35px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 25px 35px 0;
   }
 }
 
