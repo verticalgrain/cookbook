@@ -2,9 +2,7 @@
 layout: post
 title:  "Sweet potato breakfast hash"
 date:   2016-02-07 8:08:00 -0800
-tags: 
- - type: mealtype
-   tag: breakfast
+categories: [breakfast]
 nutrition-icons:
  - item: vegetarian
  - item: glutenfree

@@ -2,11 +2,7 @@
 layout: post
 title:  "Baked pita chips"
 date:   2016-02-02 8:08:00 -0800
-tags: 
- - type: mealtype
-   tag: side
- - type: mealtype
-   tag: snack
+categories: [side,snack]
 nutrition-icons:
  - item: vegetarian
  - item: vegan

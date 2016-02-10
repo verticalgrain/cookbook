@@ -2,11 +2,7 @@
 layout: post
 title:  "Roasted Carrots"
 date:   2016-01-22 2:49:27 -0800
-tags: 
- - type: mealtype
-   tag: side 
- - type: mealtype
-   tag: dinner
+categories: [side,dinner]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

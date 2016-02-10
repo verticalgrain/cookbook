@@ -2,13 +2,7 @@
 layout: post
 title:  "Smashed Potatoes"
 date:   2016-01-23 12:30:00 -0800
-tags:
- - type: mealtype
-   tag: side
- - type: mealtype
-   tag: dinner
- - type: mealtype
-   tag: breakfast
+categories: [side,dinner,breakfast]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

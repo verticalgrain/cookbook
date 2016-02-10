@@ -2,11 +2,7 @@
 layout: post
 title:  "Chickpea Chocolate Chip Cookies"
 date:   2016-01-23 6:30:00 -0800
-tags: 
- - type: mealtype
-   tag: dessert
- - type: mealtype
-   tag: snack
+categories: [dessert,snack]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

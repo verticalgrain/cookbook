@@ -2,9 +2,7 @@
 layout: post
 title:  "Beet Brownies"
 date:   2016-01-06 10:49:27 -0800
-tags: 
- - type: mealtype
-   tag: dessert
+categories: [dessert]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

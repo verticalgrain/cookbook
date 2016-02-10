@@ -60,6 +60,42 @@
       }
     }
 
+    // Content filtering
+
+    // Make filters react
+    var filters = document.getElementsByClassName('filter__checkbox');
+    for (var i = 0; i < filters.length; i++) {
+      filters[i].addEventListener('change', filter);
+    };
+
+    function filter () {
+      // Hide all posts by default
+      var posts = document.getElementsByClassName('recipe-list__item');
+      
+      for (var j = 0; j < posts.length; j++) {
+        posts[j].style.display = 'none';
+      };
+
+      filters[1].style.background = '#000000';
+
+      // Run through all filters
+      for (var k = 0; k < filters.length; k++) {
+
+        // Check if filter is active
+        if (filters[k].checked){
+
+          // Get current filter name
+          var curFilter = filters[k].getAttribute('data-filter');
+          // Get all matching elements
+          var visiblePosts = document.getElementsByClassName(curFilter);
+          for (var l = 0; l < visiblePosts.length; l++) {
+            // Show every matching element
+            visiblePosts[l].style.display = 'inline-block';
+          };
+        }
+      };
+    }
+
     /*!
       hey, [be]Lazy.js - v1.5.2 - 2015.12.01
       A lazy loading and multi-serving image script

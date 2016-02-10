@@ -2,13 +2,7 @@
 layout: post
 title:  "Roasted Cauliflower"
 date:   2016-01-06 18:49:27 -0800
-tags: 
- - type: mealtype
-   tag: side 
- - type: mealtype
-   tag: dinner
- - type: mealtype
-   tag: snack
+categories: [side,dinner,snack]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian   

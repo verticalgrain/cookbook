@@ -2,11 +2,7 @@
 layout: post
 title:  "Roasted Chickpeas"
 date:   2016-01-23 6:00:00 -0800
-tags: 
- - type: mealtype
-   tag: side 
- - type: mealtype
-   tag: dinner
+categories: [side,dinner]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian

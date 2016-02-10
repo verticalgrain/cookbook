@@ -2,11 +2,7 @@
 layout: post
 title:  "Sweet potato burritos"
 date:   2016-01-31 13:08:00 -0800
-tags: 
- - type: mealtype
-   tag: dinner
- - type: mealtype
-   tag: lunch
+categories: [dinner,lunch]
 nutrition-icons:
  - item: glutenfree
  - item: vegetarian
