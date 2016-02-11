@@ -10,14 +10,15 @@
     display: none;
   }
   &__label {
-    padding: $space;
+    padding: $space*2 $space $space $space;
     display: inline-block; 
-    font-weight: 600;
+    font-weight: 500;
     font-family: $font-sans;
+    color: $color-green;
     text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    opacity: 0.3;
+    font-size: 14px;
+    letter-spacing: 0.065em;
+    opacity: 0.40;
     &:hover {
       cursor: pointer;
     }
