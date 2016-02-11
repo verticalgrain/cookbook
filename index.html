@@ -33,22 +33,29 @@ layout: default
 <div class="l-container-wrapper">
   <div class="l-container l-container--centered">
 
-    <div class="l-col-10 l-col-m-12">
+    <div class="l-col-12 l-col-m-12">
       <ul class="recipe-list">
         {% for post in site.posts %}
           <li class="recipe-list__item l-col-4 l-col-m-6 {% for category in post.categories %}{{ category }} {% if forloop.last %}{% else %}{% endif %}{% endfor %}">
             <a class="recipe-list__link" href="{{ site.baseurl }}{{ post.url }}">
               {% if post.image %}
-                <div class="recipe-list__image b-lazy" data-src="{{ site.baseurl }}/images/{{ post.image }}"></div>
+                <div class="recipe-list__image b-lazy" data-src="{{ site.baseurl }}/images/{{ post.image }}">
+                  <ul class="nutrition">
+                    {% for nutrition-icon in post.nutrition-icons %}
+                      <li class="nutrition__icon nutrition__icon--{{ nutrition-icon.item }}"><div class="u-accessible-hide">{{ nutrition-icon.item }}</div></li>
+                    {% endfor %}
+                  </ul>
+                </div>
               {% else %}
-                <div class="recipe-list__image  recipe-list__image--noimage"></div>
+                <div class="recipe-list__image  recipe-list__image--noimage">
+                  <ul class="nutrition">
+                    {% for nutrition-icon in post.nutrition-icons %}
+                      <li class="nutrition__icon nutrition__icon--{{ nutrition-icon.item }}"><div class="u-accessible-hide">{{ nutrition-icon.item }}</div></li>
+                    {% endfor %}
+                  </ul>
+                </div>
               {% endif %}
               <div class="recipe-list__title">{{ post.title }}</div>
-              <ul class="nutrition">
-                {% for nutrition-icon in post.nutrition-icons %}
-                  <li class="nutrition__icon nutrition__icon--{{ nutrition-icon.item }}"><div class="u-accessible-hide">{{ nutrition-icon.item }}</div></li>
-                {% endfor %}
-              </ul>
             </a>
           </li>
         {% endfor %}
