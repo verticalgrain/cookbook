@@ -1,5 +1,6 @@
 ---
 layout: post
+index-style: image
 title:  "Sweet potato breakfast hash"
 date:   2016-02-07 8:08:00 -0800
 categories: [breakfast]
