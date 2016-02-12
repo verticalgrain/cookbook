@@ -25,13 +25,17 @@
   }
   .recipe-list & {
     position: absolute;
-    bottom: -23px;
-    right: 0;
-    margin-left: -50px;
+    right: 10px;
+    top: 10px;    
     padding-right: 0px;
+    margin-top: 0;
     &__icon {
+      // background-color: white;
+      margin: 0 0 2px 0;
       border-radius: 50%;
-      margin: 0 0 0 2px;
+      float: none;
+      width: 30px;
+      height: 30px;
     }
   }
 }
