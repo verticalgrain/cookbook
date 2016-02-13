@@ -12,9 +12,18 @@ $font-size-body: 16;
 
 // Letter spacing
 
+// New colors
+$color-teal: #a0c1a6;
+$color-cream: #f3eeda;
+$color-darkblue: #0e4250;
+$color-orangeaccent: #df4d34;
+$color-dark: #414141;
+
 // Colours
 $color-base: #22181C; // the colour of most body text
 $color-green: #477A74;
+// $color-canvas: rgb(160,211,207); // RR teal
+$color-canvas: $color-teal;
 $color-green-light: #8ABAB6;
 $color-brown: #442220;
 $color-purple: #2E0014;
@@ -22,7 +31,6 @@ $color-orange: #F0803C;
 $color-pink: #E84855;
 $color-red: #DD0001;
 
-$color-canvas: rgb(160,211,207); // RR teal
 
 // Breakpoints
 $breakpoint-full: 1400px;
