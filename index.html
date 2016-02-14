@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="l-container-wrapper l-container-wrapper--shadow" style="background-color: #F3E37C;">
+<div class="l-container-wrapper l-container-wrapper--shadow l-space--mid--x1" style="background-color: #F3E37C;">
   <div class="l-container l-container--centered">
     <div class="l-col-8">
       <div class="hero">
@@ -20,14 +20,12 @@ layout: default
   </div><!-- .container -->
 </div>
 
-
-<div class="filter l-space--x2">
+<div class="filter l-space--x2 l-space--mid--x1">
   {% for category in site.categories %}
     <input type="checkbox" class="filter__checkbox" id="{{ category | first | remove:' ' }}" data-filter="{{ category | first | remove:' ' }}" />
     <label class="filter__label" for="{{ category | first | remove:' ' }}">{{ category | first }}</label>
   {% endfor %}
 </div>
-
 
 <div class="l-container-wrapper">
   <div class="l-container l-container--centered">

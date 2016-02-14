@@ -2,11 +2,14 @@
 <!--[if IE 8 ]>    <html class="ie ie8 lt-ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 lt-ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang=""><!--<![endif]-->
+
 <html>
+
+  {% capture layout %}{% if page.layout %}layout--{{ page.layout }}{% endif %}{% endcapture %}
 
   {% include head.html %}
 
-  <body spellcheck="false">
+  <body class="{{ layout }}">
 
     {% include header.html %}
 
