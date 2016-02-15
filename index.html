@@ -21,10 +21,30 @@ layout: default
 </div>
 
 <div class="filter l-space--x2 l-space--mid--x1">
-  {% for category in site.categories %}
+  <input type="checkbox" class="filter__checkbox" id="glutenfree" data-filter="glutenfree">
+  <label class="filter__label" for="glutenfree">Gluten free</label>
+  <input type="checkbox" class="filter__checkbox" id="vegetarian" data-filter="vegetarian">
+  <label class="filter__label" for="vegetarian">Vegetarian</label>
+  <input type="checkbox" class="filter__checkbox" id="vegan" data-filter="vegan">
+  <label class="filter__label" for="vegan">Vegan</label>
+  <div class="separator--vertical">|</div>
+  <input type="checkbox" class="filter__checkbox" id="breakfast" data-filter="breakfast">
+  <label class="filter__label" for="breakfast">Breakfast</label>
+  <input type="checkbox" class="filter__checkbox" id="lunch" data-filter="lunch">
+  <label class="filter__label" for="lunch">Lunch</label>
+  <input type="checkbox" class="filter__checkbox" id="dinner" data-filter="dinner">
+  <label class="filter__label" for="dinner">Dinner</label>
+  <div class="separator--vertical">|</div>
+  <input type="checkbox" class="filter__checkbox" id="dessert" data-filter="dessert">
+  <label class="filter__label" for="dessert">Dessert</label>
+  <input type="checkbox" class="filter__checkbox" id="side" data-filter="side">
+  <label class="filter__label" for="side">Side</label>
+  <input type="checkbox" class="filter__checkbox" id="snack" data-filter="snack">
+  <label class="filter__label" for="snack">Snack</label>
+<!--   {% for category in site.categories %}
     <input type="checkbox" class="filter__checkbox" id="{{ category | first | remove:' ' }}" data-filter="{{ category | first | remove:' ' }}" />
     <label class="filter__label" for="{{ category | first | remove:' ' }}">{{ category | first }}</label>
-  {% endfor %}
+  {% endfor %} -->
 </div>
 
 <div class="l-container-wrapper">
@@ -33,7 +53,7 @@ layout: default
     <div class="l-col-12">
       <ul class="recipe-list">
         {% for post in site.posts %}
-          <li class="recipe-list__item recipe-list__item--{{ post.index-style }} {% for category in post.categories %}{{ category }} {% if forloop.last %}{% else %}{% endif %}{% endfor %}">
+          <li class="recipe-list__item recipe-list__item--{{ post.index-style }} {% for category in post.categories %}{{ category }} {% if forloop.last %}{% else %}{% endif %}{% endfor %} {% for nutrition-icon in post.nutrition-icons %}{{ nutrition-icon.item }} {% endfor %}">
             <a class="recipe-list__link" href="{{ site.baseurl }}{{ post.url }}">
               <div class="recipe-list__item__header">
                 <div class="recipe-list__categories">
