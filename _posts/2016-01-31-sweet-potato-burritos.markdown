@@ -4,7 +4,6 @@ title:  "Sweet potato burritos"
 date:   2016-01-31 13:08:00 -0800
 categories: [dinner,lunch]
 nutrition-icons:
- - item: glutenfree
  - item: vegetarian
  - item: vegan
 time: 45 minutes
