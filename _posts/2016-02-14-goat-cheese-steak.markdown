@@ -1,7 +1,7 @@
 ---
 layout: post
 <!-- index-style: image -->
-title:  "Grilled Steak with Goat Cheese"
+title:  "Grilled Steak with Goat Cheese & Pepper Jelly"
 date:   2016-02-15 8:08:00 -0800
 categories: [dinner]
 nutrition-icons:
