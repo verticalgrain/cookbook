@@ -7,7 +7,6 @@ categories: [lunch,dinner]
 nutrition-icons:
  - item: vegetarian
  - item: glutenfree
- - item: vegan
 time: 1 hour
 ingredients:
  - ingredient: Olive oil

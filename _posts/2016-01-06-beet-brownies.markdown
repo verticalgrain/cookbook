@@ -8,24 +8,24 @@ nutrition-icons:
  - item: vegetarian
 time: 1 hour
 ingredients:
- - ingredient: Flour (or substitutions)
-   quantity: 1 1/4 cups
+ - ingredient: Coconut oil
+   quantity: 2 tbsp., melted
+ - ingredient: Maple syrup
+   quantity: 1/4 cup
+ - ingredient: Beets (canned)
+   quantity: 1 can
+ - ingredient: vanilla
+   quantity: 1 tsp.
+ - ingredient: Coconut Flakes
+   quantity: 1/2 cup
  - ingredient: Cocoa Powder
    quantity: 1/4 cup
- - ingredient: Sugar
+ - ingredient: Brown sugar
    quantity: 1/3 cups
  - ingredient: Baking powder
-   quantity: 1 teaspoon
- - ingredient: Chocolate chips
-   quantity: 1/3 cup
- - ingredient: Beet Puree
-   quantity: 1 cup
+   quantity: 1 tsp.
  - ingredient: Eggs
    quantity: 3, large
- - ingredient: Coconut oil
-   quantity: 1/4 cup, melted
- - ingredient: vanilla
-   quantity: 1 teaspoon
 tools:
  - tool: Baking dish - 9x9
  - tool: Mixing bowl - large
@@ -35,8 +35,14 @@ image: beet-brownie.jpg
 ---
 Preheat oven to 350˚F. Grease a 9x9 baking dish.
 
-In a large mixing bowl, whisk together the: <span>1 1/4 cups gluten free flour,</span> <span>1/4 cup cocoa powder,</span> <span>1/3 cup sugar,</span> <span>1 teaspoon baking powder,</span> <span>1/3 cup chocolate chips</span>
+To liquify <span>2 tbsp. coconut oil</span>, place it in a pyrex dish in the oven while it heats. 
 
-Add the: <span>1/3 cup beet puree,</span> <span>3 large eggs,</span> <span>1/4 cup coconut oil (melted),</span> <span>and 1 teaspoon vanilla</span>
+Blend, at high speed, the <span>2 tbsp. melted coconut oil,</span> <span>1 tsp. vanilla,</span> <span>1 can beets</span> Blend until there are no chunks of beets. 
 
-Transfer batter into greased baking dish and cook at 350˚F for 27.5 minutes, or until it passes the clean toothpick test.
+In a large mixing bowl, whisk together the: <span>1/2 cup coconut flakes,</span> <span>1/4 cup cocoa powder,</span> <span>1/3 cup brown sugar,</span> <span>1 teaspoon baking powder</span>
+
+Add the blended beets mixture to the dry mixture and whisk thoroughly. 
+
+Fold in the <span>3 eggs,</span> being careful not to mix too vigorously. 
+
+Transfer batter into greased baking dish and cook at 350˚F for 30 minutes, or until it passes the clean toothpick test.
