@@ -8,8 +8,8 @@ nutrition-icons:
  - item: vegetarian
 time: 1 hour
 ingredients:
- - ingredient: Flour (or substitution)
-   quantity: 1 1/4 cups all-purpose
+ - ingredient: Coconut flour
+   quantity: 1 1/4 cups
  - ingredient: Baking Powder
    quantity: 2 tsp.
  - ingredient: Salt

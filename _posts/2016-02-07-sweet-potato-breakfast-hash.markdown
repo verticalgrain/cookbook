@@ -1,12 +1,12 @@
 ---
 layout: post
 <!-- index-style: image -->
-title:  "Sweet potato breakfast hash"
+title:  "Sweet Potato Breakfast Hash"
 date:   2016-02-07 8:08:00 -0800
 categories: [breakfast]
 nutrition-icons:
- - item: vegetarian
  - item: glutenfree
+ - item: vegetarian
 time: 45 minutes
 ingredients:
  - ingredient: Coconut oil

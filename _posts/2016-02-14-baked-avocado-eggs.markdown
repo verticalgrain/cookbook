@@ -1,13 +1,13 @@
 ---
 layout: post
 <!-- index-style: image -->
-title:  "Baked eggs in avocado"
+title:  "Baked Eggs in Avocado"
 date:   2016-02-14 10:08:00 -0800
 categories: [breakfast,lunch]
 nutrition-icons:
- - item: ketogenic
  - item: vegetarian
  - item: glutenfree
+ - item: ketogenic
 time: 20 minutes
 ingredients:
  - ingredient: Ripe Avocaods

@@ -1,7 +1,7 @@
 ---
 layout: post
 <!-- index-style: image -->
-title:  "Black bean brownies"
+title:  "Black Bean Brownies"
 date:   2016-02-28 8:08:00 -0800
 categories: [dessert]
 nutrition-icons:
@@ -9,7 +9,7 @@ nutrition-icons:
  - item: vegetarian
 time: 1 hour
 ingredients:
- - ingredient: Coconut oil (liquid)
+ - ingredient: Coconut oil
    quantity: 3 tbsp.
  - ingredient: Black beans
    quantity: 1 15 oz can
