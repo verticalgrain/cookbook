@@ -34,8 +34,8 @@ $l-col-width: 100% / $l-column-count; // Col width in percentage
     top: 0;
   }
   &--shadow {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.085) 0 1px 1px 0;
-    box-shadow: rgba(0, 0, 0, 0.085) 0 1px 1px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.085) 0 2px 2px 0;
+    box-shadow: rgba(0, 0, 0, 0.085) 0 2px 2px 0;
   }
 }
 
