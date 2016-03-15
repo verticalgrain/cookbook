@@ -1,0 +1,42 @@
+---
+layout: post
+<!-- index-style: image -->
+title:  "Easy Hummus"
+date:   2016-03-15 8:08:00 -0800
+categories: [side,snack]
+nutrition-icons:
+ - item: glutenfree
+ - item: vegetarian
+ - item: vegan
+time: 15 minutes
+ingredients:
+ - ingredient: Chickpeas
+   quantity: 1 15 oz can
+ - ingredient: Garlic
+   quantity: 1 clove
+ - ingredient: Olive oil
+   quantity: 1/4 cup
+ - ingredient: Lemon juice
+   quantity: 2 tbsp.
+ - ingredient: Tahini (optional)
+   quantity: 2 tbsp.
+ - ingredient: Cumin
+   quantity: 1 tsp.
+ - ingredient: Salt
+   quantity: 1/2 tsp.
+ - ingredient: Paprika
+   quantity: 1/4 tsp.
+tools:
+ - tool: Can opener
+ - tool: Food processor
+ - tool: Mixing bowl
+ - tool: Mixing spoon
+image: hummus.jpg
+image-credit:
+ - name: Real Recipes
+ - link: 
+---
+
+In a food processor, puree the <span>1 15 oz can chickpeas,</span> <span>1 clove garlic,</span> <span>1/4 cup olive oil,</span> <span>2 tbsp. lemon juice,</span> <span>2 tbsp. tahini,</span> <span>1 tsp. cumin,</span> <span>1/2 tsp. salt</span> If necessary, add 1-2 tbsp. water to achieve smooth consistency.
+
+Transfer to a serving bowl and sprinkle <span>1/4 tsp. paprika</span> on top. 

@@ -56,7 +56,7 @@ In a small mixing bowl, combine the:
 	<span>1 cup milk,</span>
 	<span>½ cup pumpkin,</span>
 	<span>1 egg,</span>
-	<span>2 tbsp. oil or butter</span>
+	<span>2 tbsp. coconut oil</span>
 
 Stir into the dry ingredients and mix until just combined.
 
