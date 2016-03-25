@@ -10,11 +10,11 @@
   }
   &__heading {
     width: 60%;
-    padding-left: 60px;
+    padding: 20px 0 0 30px;
   }
   .logo, &__heading {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
   }
   @media (max-width: $breakpoint-mid) {
     padding-top: $space*2;

@@ -22,8 +22,6 @@ ingredients:
    quantity: 3 tbsp.
  - ingredient: Cumin
    quantity: 2 tsp.
- - ingredient: Soy saunce
-   quantity: 3 tbsp.
  - ingredient: Tortillas of your choice
    quantity: 12
 ingredients-optional:
@@ -44,16 +42,17 @@ image-credit:
  - name: www.foodofbliss.com
  - link: http://www.foodofbliss.com/2012/06/20/sweet-potato-bean-burritos
 ---
+Preheat oven to 350 degrees. 
 
 Cut the <span>2 large sweet potatoes</span> into about 8 pieces and add to a pot of boiling water. Boil for 15 minutes or until soft when pierced with a fork. Drain water and return sweet potatoes to large pot. Mash with a potato masher.
 
-Slice finely the <span>1 large onion,</span> <span>2 garlic cloves</span>
+While sweet potatoes boil, slice finely the <span>1 large onion,</span> <span>2 garlic cloves</span>
 
 Heat a large pan or skillet to medium high. Add the sliced onion and garlic and cook 7 minutes or until soft.
 
-Drain and rinse the <span>1 can kidney beans</span> then mash beans into the onion and garlic in the skillet, using a potato masher or flat utensil.
+Drain and rinse the <span>1 can kidney beans</span> then mash beans into the onion and garlic in the skillet.
 
-Add the <span>1 cup water,</span> <span>3 tbsp. chilli powder,</span> <span>2 tsp. cumin,</span> <span>3 tbsp. soy sauce</span> to the mixture and stir.
+Add the <span>1 cup water,</span> <span>3 tbsp. chilli powder,</span> <span>2 tsp. cumin</span> to the mixture and stir.
 
 Fold the mixture into the mashed sweet potatoes in the pot.
 

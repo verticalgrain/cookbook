@@ -1,7 +1,7 @@
 ---
 layout: post
 <!-- index-style: image -->
-title:  "Black Bean Brownies"
+title:  "Ultimate sneaky brownies"
 date:   2016-02-28 8:08:00 -0800
 categories: [dessert]
 nutrition-icons:
@@ -19,7 +19,7 @@ ingredients:
    quantity: 1/4 tsp.
  - ingredient: Vanilla extract
    quantity: 1 tsp.
- - ingredient: Organic cane sugar
+ - ingredient: Brown sugar
    quantity: 1/2 cup
  - ingredient: Baking powder
    quantity: 1 1/2 tsp.
@@ -42,15 +42,13 @@ image-credit:
 
 Preheat oven to 350 degrees.
 
-Scoop <span>3 tbsp. coconut oil</span> into an oven safe dish and place in oven to liquify while oven preheats.
+To liquify <span>2 tbsp. coconut oil</span>, place it in a pyrex dish in the oven while it heats. 
 
-Lightly grease the muffin pan.
+Grease a 12 slot muffin pan and set aside.
 
-Open the <span>1 15 oz can black beans</span> and rinse beans thoroughly in a colander.
+In blender or food processor, blend <span>1 15 oz can black beans,</span> <span>1 15 oz can beets,</span> <span>2 tbsp. coconut oil,</span> <span>1 tsp. vanilla extract</span> until very smooth. 
 
-In blender or food processor, combine the <span>3 tbsp. coconut oil,</span> <span>black beans</span> Blend until mixture is smooth and black bean skins are broken up.
-
-Pour mixture into large mixing bowl and add <span>3/4 cup cocoa powder,</span> <span>1/4 tsp. sea salt,</span> <span>1 tsp. vanilla extract,</span> <span>1/2 cup organic cane sugar,</span> <span>1 1/2 tsp. baking powder,</span> <span>2 eggs</span> Mix well.
+Add the mixture to a large mixing bowl, and add <span>3/4 cup cocoa powder,</span> <span>1/4 tsp. sea salt,</span> <span>1/2 cup brown sugar,</span> <span>1 1/2 tsp. baking powder,</span> <span>2 eggs</span> Mix well. 
 
 Evenly distribute the mixture into the muffin pan slots.
 
